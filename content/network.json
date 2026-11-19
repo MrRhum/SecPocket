@@ -1,0 +1,233 @@
+[
+  {
+    "id": "nist-800-153",
+    "title": "NIST SP 800-153: Securing Wireless Local Area Networks",
+    "shortTitle": "NIST WLAN Security",
+    "issuer": "NIST",
+    "edition": "800-153 · 2012",
+    "region": "United States / Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "Identity & Access", "Endpoint & Mobility"],
+    "type": "Guideline",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "The enterprise WLAN baseline: policy, architecture, monitoring.",
+    "summary": "SP 800-153 provides guidelines for securing wireless local area networks in enterprises. It covers WLAN policy, architecture, authentication, segmentation, rogue access-point detection and ongoing monitoring, with WPA2-Enterprise as its technical reference point.",
+    "keyPoints": [
+      "Establish a WLAN security policy and assign clear ownership before deploying technology.",
+      "Use enterprise authentication and strong encryption; treat open or shared-key networks as untrusted.",
+      "Separate guest, corporate and IoT wireless traffic with VLANs and firewall policy.",
+      "Detect and locate rogue access points and unauthorized ad hoc networks.",
+      "Harden access points, controllers and management interfaces.",
+      "Monitor the wireless spectrum and review logs continuously.",
+      "Pair the guide with current WPA3 and zero-trust guidance for new deployments."
+    ],
+    "crownJewels": [
+      "Wireless credentials, certificates and RADIUS infrastructure.",
+      "Access points, controllers and their management planes.",
+      "Corporate and guest traffic on shared wireless infrastructure.",
+      "Rogue-device and wireless-monitoring evidence."
+    ],
+    "clientUse": [
+      "Audit WLAN policy, segmentation and authentication against the guide.",
+      "Hunt for rogue access points and unauthorized wireless bridges.",
+      "Separate guest, OT and corporate traffic with enforceable policy.",
+      "Use it as a foundation, then upgrade design requirements to WPA3."
+    ],
+    "tags": ["Wi-Fi", "WLAN", "NIST", "Segmentation", "Rogue AP"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/153/final"
+  },
+  {
+    "id": "wpa3",
+    "title": "Wi-Fi CERTIFIED WPA3",
+    "shortTitle": "WPA3",
+    "issuer": "Wi-Fi Alliance",
+    "edition": "WPA3 · 2018 onwards",
+    "region": "Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "Identity & Access", "Endpoint & Mobility"],
+    "type": "Technical standard",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "The current Wi-Fi security baseline, with forward secrecy and better handshakes.",
+    "summary": "WPA3 is the Wi-Fi Alliance's security certification for modern wireless networks. It replaces the WPA2 pre-shared-key handshake with SAE, adds 192-bit enterprise cryptography and protects open networks through OWE.",
+    "keyPoints": [
+      "SAE (Simultaneous Authentication of Equals) provides forward secrecy and resists offline dictionary attacks.",
+      "WPA3-Enterprise offers a 192-bit security mode for high-assurance environments.",
+      "OWE (Opportunistic Wireless Encryption) encrypts traffic on open guest networks.",
+      "Protected Management Frames defend against deauthentication and disassociation attacks.",
+      "WPA3 transition mode supports mixed WPA2/WPA3 estates but weakens the security story.",
+      "Device provisioning and IoT onboarding need separate design attention.",
+      "WPA3 does not fix weak passphrases, rogue APs or poor network segmentation."
+    ],
+    "crownJewels": [
+      "Wi-Fi passphrases, PSKs and enterprise credentials.",
+      "RADIUS and identity infrastructure.",
+      "Access-point and controller management interfaces.",
+      "Guest, IoT and OT traffic that shares the wireless estate.",
+      "Wireless management frames and client associations."
+    ],
+    "clientUse": [
+      "Set WPA3 as the target for new deployments and high-risk sites.",
+      "Use WPA3-Enterprise 192-bit for sensitive environments where supported.",
+      "Plan retirement of WPA2 transition mode and legacy IoT exceptions.",
+      "Pair WPA3 with segmentation, monitoring and certificate-based identity."
+    ],
+    "tags": ["Wi-Fi", "WPA3", "SAE", "OWE", "Wireless"],
+    "link": "https://www.wi-fi.org/discover-wi-fi/security"
+  },
+  {
+    "id": "nist-800-121",
+    "title": "NIST SP 800-121: Guide to Bluetooth Security",
+    "shortTitle": "NIST Bluetooth Security",
+    "issuer": "NIST",
+    "edition": "Rev. 2 · 2017",
+    "region": "United States / Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "Endpoint & Mobility", "Identity & Access"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Security guidance for the personal-area network hiding in every pocket.",
+    "summary": "SP 800-121 explains how to secure Bluetooth and Bluetooth Low Energy deployments. It covers pairing models, link-layer security, device management and the risks created by discoverable devices and weak pairing.",
+    "keyPoints": [
+      "Pairing mode determines whether the link is protected against eavesdropping and man-in-the-middle attacks.",
+      "Numeric comparison and passkey entry provide stronger protection than just-works pairing.",
+      "LE Secure Connections improve key exchange for Bluetooth Low Energy.",
+      "Disable unnecessary discoverability, pairing and profiles.",
+      "Use device management, allowlists and monitoring for enterprise Bluetooth fleets.",
+      "Assess Bluetooth keyboards, medical devices, wearables and industrial sensors by use case.",
+      "Check current Bluetooth SIG guidance alongside this older NIST baseline."
+    ],
+    "crownJewels": [
+      "Bluetooth link keys, bonding data and device identities.",
+      "Input devices and peripherals that can inject keystrokes.",
+      "Wearables, medical devices and OT sensors carrying sensitive data.",
+      "Discoverable devices and unmanaged Bluetooth bridges."
+    ],
+    "clientUse": [
+      "Inventory Bluetooth use and pair only approved device classes.",
+      "Ban just-works pairing for sensitive peripherals where possible.",
+      "Disable discoverability and unused profiles on managed devices.",
+      "Review medical, wearable and OT Bluetooth separately."
+    ],
+    "tags": ["Bluetooth", "PAN", "Pairing", "Wearables", "NIST"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/121/r2/final"
+  },
+  {
+    "id": "zigbee",
+    "title": "Zigbee 3.0 Security",
+    "shortTitle": "Zigbee 3.0",
+    "issuer": "Connectivity Standards Alliance",
+    "edition": "Zigbee 3.0 · 2016+",
+    "region": "Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "OT / ICS", "Endpoint & Mobility"],
+    "type": "Technical standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "The trust-center model behind smart buildings, sensors and home automation.",
+    "summary": "Zigbee 3.0 unifies the application layer for low-power mesh networks and defines security through trust centers, network keys and install codes. It is common in building automation, smart meters, lighting and IoT sensor estates.",
+    "keyPoints": [
+      "A trust center manages network security and distributes keys to joining devices.",
+      "Centralized security uses a single network key; distributed security gives some devices their own link keys.",
+      "Install codes reduce the risk of joining devices being accepted by the wrong network.",
+      "Over-the-air firmware updates must be signed and authenticated.",
+      "Weak key handling, default install codes and poor trust-center protection are common failures.",
+      "Network keys are shared secrets: one compromised device can expose the mesh."
+    ],
+    "crownJewels": [
+      "The trust center and its master keys.",
+      "Network keys and device link keys.",
+      "Install codes and commissioning credentials.",
+      "Sensors, actuators and building-automation commands.",
+      "OTA firmware images and update signing keys."
+    ],
+    "clientUse": [
+      "Review commissioning and trust-center design before deploying at scale.",
+      "Rotate default install codes and protect the trust center like a CA.",
+      "Verify firmware-signing and update processes.",
+      "Segment Zigbee networks from corporate and safety-critical OT networks."
+    ],
+    "tags": ["Zigbee", "PAN", "IoT", "Trust center", "Smart buildings"],
+    "link": "https://csa-iot.org/all-solutions/zigbee/"
+  },
+  {
+    "id": "5g-security",
+    "title": "3GPP 5G Security Architecture (TS 33.501)",
+    "shortTitle": "3GPP 5G Security",
+    "issuer": "3GPP",
+    "edition": "TS 33.501 · evolving",
+    "region": "Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "Cloud", "OT / ICS", "Identity & Access"],
+    "type": "Technical standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "The security architecture behind private 5G, network slicing and roaming.",
+    "summary": "TS 33.501 defines the 5G security architecture, including subscriber authentication, identity privacy, network-domain security, slicing and service-based interfaces. It is essential for telecom, private-5G and critical-network assessments.",
+    "keyPoints": [
+      "5G-AKA authenticates subscribers and establishes keys between the device and the network.",
+      "SUCI concealment protects the subscriber identity on the radio interface.",
+      "Service-based architecture secures signaling between network functions with TLS and OAuth-based service authorization.",
+      "Network slicing introduces new isolation and cross-slice security requirements.",
+      "Roaming uses the SEPP to protect inter-operator signaling.",
+      "Private 5G and edge deployments add cloud and OT risks beyond the 3GPP scope.",
+      "The standard evolves with each 3GPP release; always check the applicable release."
+    ],
+    "crownJewels": [
+      "Subscriber credentials, SIM/eSIM data and authentication keys.",
+      "Signaling between network functions and roaming partners.",
+      "Network slices and the isolation between tenants.",
+      "Management, orchestration and edge infrastructure.",
+      "User-plane traffic and metadata."
+    ],
+    "clientUse": [
+      "Scope private-5G assessments by release, architecture and slice design.",
+      "Review subscriber identity privacy, roaming and interconnect security.",
+      "Assess slice isolation alongside cloud and OT controls.",
+      "Include the management plane and supply chain, not just the radio."
+    ],
+    "tags": ["5G", "Telecom", "Network slicing", "SUCI", "3GPP"],
+    "link": "https://www.3gpp.org/ftp/Specs/archive/33_series/33.501/"
+  },
+  {
+    "id": "nfc-emv",
+    "title": "NFC and EMV Contactless Security",
+    "shortTitle": "NFC / EMV Contactless",
+    "issuer": "EMVCo / ISO",
+    "edition": "EMV contactless & tokenisation",
+    "region": "Global",
+    "primaryTopic": "Network, Wi-Fi & PAN",
+    "topics": ["Network, Wi-Fi & PAN", "Payments & PAN", "Identity & Access"],
+    "type": "Technical standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "How tap-to-pay protects the PAN, and where relay and skimming risks remain.",
+    "summary": "NFC and EMV contactless standards govern tap-to-pay, mobile wallets and tokenized card credentials. Security relies on short-range communication, dynamic cryptograms, secure elements and network-level tokenization, not on the PAN alone.",
+    "keyPoints": [
+      "EMV contactless transactions use dynamic cryptograms that change per transaction.",
+      "Tokenization replaces the PAN with a payment token restricted to a device or domain.",
+      "Secure elements and trusted execution environments protect mobile-wallet keys.",
+      "Relay attacks extend range and can bypass the physical proximity assumption.",
+      "Cardholder verification methods and transaction risk rules affect fraud exposure.",
+      "Merchant terminals and payment apps must protect keys, firmware and card data.",
+      "NFC is also used for access badges and identity documents, with different threat models."
+    ],
+    "crownJewels": [
+      "Primary account numbers and payment tokens.",
+      "EMV keys, cryptograms and secure-element credentials.",
+      "POS terminals and payment-app firmware.",
+      "Cardholder verification data and transaction logs.",
+      "Access-badge and identity credentials carried over NFC."
+    ],
+    "clientUse": [
+      "Assess tokenization and secure-element use, not just PCI scope.",
+      "Test for relay and skimming scenarios in payment journeys.",
+      "Review terminal firmware, key management and tamper evidence.",
+      "Separate payment NFC from physical-access credentials."
+    ],
+    "tags": ["NFC", "EMV", "Payments", "PAN", "Tokenisation"],
+    "link": "https://www.emvco.com/emv-technologies/contactless/"
+  }
+]

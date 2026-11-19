@@ -1,0 +1,195 @@
+[
+  {
+    "id": "nist-800-61",
+    "title": "NIST SP 800-61 Rev. 3: Incident Response",
+    "shortTitle": "NIST IR Guide",
+    "issuer": "NIST",
+    "edition": "Rev. 3 · 2025",
+    "region": "United States / Global",
+    "primaryTopic": "Incident Response & Threat Intel",
+    "topics": ["Incident Response & Threat Intel", "Governance & Risk", "Resilience & Regulation"],
+    "type": "Guideline",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "Incident response rebuilt around risk management and CSF 2.0.",
+    "summary": "SP 800-61r3 reframes incident response as an integral part of cybersecurity risk management. It aligns response outcomes with CSF 2.0, emphasizes preparation and governance, and provides practical guidance for playbooks, communications and continuous improvement.",
+    "keyPoints": [
+      "Incident response is integrated into the broader risk-management and governance programme.",
+      "Preparation includes policy, roles, training, tooling, playbooks and executive support.",
+      "Detection and analysis depend on good logging, telemetry and threat intelligence.",
+      "Response covers coordination, containment, eradication, recovery and communication.",
+      "Lessons learned and metrics feed back into prevention and preparedness.",
+      "Third parties, legal, communications and business owners are part of the response system.",
+      "The guide is a CSF 2.0 community profile and works with the six CSF functions."
+    ],
+    "crownJewels": [
+      "Critical services and the data needed to keep them running.",
+      "Logs, telemetry and forensic evidence.",
+      "Incident roles, contact trees and decision authority.",
+      "External communications, legal privilege and regulatory notifications.",
+      "Third-party providers and their incident interfaces."
+    ],
+    "clientUse": [
+      "Build an incident-response programme, not just a policy document.",
+      "Exercise playbooks against realistic, business-impacting scenarios.",
+      "Define decision rights and communication paths before an incident.",
+      "Use metrics to demonstrate improvement after every exercise or event."
+    ],
+    "tags": ["Incident response", "NIST", "CSF 2.0", "Playbooks", "Resilience"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+  },
+  {
+    "id": "iso-27035",
+    "title": "ISO/IEC 27035: Incident Management",
+    "shortTitle": "ISO 27035",
+    "issuer": "ISO / IEC",
+    "edition": "2023 series",
+    "region": "Global",
+    "primaryTopic": "Incident Response & Threat Intel",
+    "topics": ["Incident Response & Threat Intel", "Governance & Risk", "Resilience & Regulation"],
+    "type": "Standard series",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "A management-system approach to detecting, responding and learning from incidents.",
+    "summary": "ISO/IEC 27035 provides a structured approach to information security incident management. The 2023 series covers principles, guidelines and processes for preparing, detecting, assessing, responding to and learning from incidents.",
+    "keyPoints": [
+      "Establish an incident-management policy, roles, reporting channels and resources.",
+      "Detect and report events; assess whether they qualify as incidents.",
+      "Respond through containment, eradication, recovery and communication.",
+      "Preserve evidence and maintain records suitable for legal and regulatory needs.",
+      "Link incidents to risk management, business continuity and change management.",
+      "Conduct post-incident reviews and track corrective actions.",
+      "The series supports ISO 27001 and can be used independently."
+    ],
+    "crownJewels": [
+      "Incident records and evidence with chain of custody.",
+      "Critical business services and their dependencies.",
+      "Roles, escalation paths and external notifications.",
+      "Lessons-learned actions and management decisions."
+    ],
+    "clientUse": [
+      "Build incident-management processes that fit the client's operating model.",
+      "Test reporting channels and escalation with tabletop exercises.",
+      "Integrate incident evidence with legal and regulatory obligations.",
+      "Track corrective actions to closure and verify effectiveness."
+    ],
+    "tags": ["Incident management", "ISO", "Evidence", "Process", "Resilience"],
+    "link": "https://www.iso.org/standard/27035.html"
+  },
+  {
+    "id": "cisa-playbooks",
+    "title": "CISA Incident and Vulnerability Response Playbooks",
+    "shortTitle": "CISA Response Playbooks",
+    "issuer": "CISA",
+    "edition": "2021",
+    "region": "United States",
+    "primaryTopic": "Incident Response & Threat Intel",
+    "topics": ["Incident Response & Threat Intel", "Governance & Risk", "Supply Chain & Product Security"],
+    "type": "Playbook",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "Government-grade response steps, packaged for practical use.",
+    "summary": "CISA's playbooks document how federal agencies respond to cyber incidents and vulnerabilities, from preparation through post-incident activity. They are a useful template for organizations that need a clear, repeatable operational rhythm.",
+    "keyPoints": [
+      "Separate playbooks cover incident response and vulnerability response.",
+      "Phases include preparation, detection and analysis, containment, eradication, recovery and post-incident activity.",
+      "Roles and coordination across technical, legal, communications and leadership teams are explicit.",
+      "The playbooks emphasize documentation, evidence and consistent decision-making.",
+      "Vulnerability response includes triage, prioritization, remediation and verification.",
+      "They are designed for federal context but adaptable to any enterprise.",
+      "Use them to build scenario-specific playbooks rather than one generic document."
+    ],
+    "crownJewels": [
+      "Critical functions and the dependencies that support them.",
+      "Evidence, logs and timeline data.",
+      "Decision authority and external coordination contacts.",
+      "Vulnerability inventory and remediation records."
+    ],
+    "clientUse": [
+      "Adapt the phases and roles to the client's organization.",
+      "Create separate playbooks for ransomware, business email compromise and critical vulnerabilities.",
+      "Test communication and escalation with tabletop exercises.",
+      "Measure time-to-detect, contain and recover."
+    ],
+    "tags": ["CISA", "Playbooks", "Incident response", "Vulnerability response", "Government"],
+    "link": "https://www.cisa.gov/resources-tools/resources/incident-and-vulnerability-response-playbooks"
+  },
+  {
+    "id": "stopransomware",
+    "title": "CISA #StopRansomware Guide",
+    "shortTitle": "#StopRansomware",
+    "issuer": "CISA / MS-ISAC",
+    "edition": "Updated 2023",
+    "region": "United States / Global",
+    "primaryTopic": "Incident Response & Threat Intel",
+    "topics": ["Incident Response & Threat Intel", "Endpoint & Mobility", "Identity & Access", "Resilience & Regulation"],
+    "type": "Playbook",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "Practical prevention and response for the attack most likely to stop the business.",
+    "summary": "The #StopRansomware Guide combines ransomware prevention best practices with a response checklist. It focuses on the controls that blunt initial access, limit spread and enable recovery without paying.",
+    "keyPoints": [
+      "Prevent initial access through patching, MFA, email security and removal of exposed RDP.",
+      "Limit lateral movement with least privilege, segmentation and credential hygiene.",
+      "Maintain offline, immutable backups and test restoration regularly.",
+      "Detect early through endpoint telemetry, authentication monitoring and file-integrity alerts.",
+      "Respond with a pre-agreed playbook covering isolation, evidence, communications and legal.",
+      "Do not pay: payment does not guarantee recovery and may violate sanctions or encourage crime.",
+      "Recovery must include validating systems before reconnecting them."
+    ],
+    "crownJewels": [
+      "Backups and restore capability.",
+      "Identity infrastructure and privileged accounts.",
+      "Exposed remote-access services and endpoints.",
+      "Business-critical data and operational technology.",
+      "Crisis communications and regulatory-notification readiness."
+    ],
+    "clientUse": [
+      "Run a ransomware readiness assessment against prevention and response steps.",
+      "Test backup restoration, not just backup completion.",
+      "Remove exposed RDP and enforce phishing-resistant MFA.",
+      "Build a decision-ready crisis plan with legal, comms and insurance."
+    ],
+    "tags": ["Ransomware", "CISA", "Backups", "Response", "Prevention"],
+    "link": "https://www.cisa.gov/stopransomware/ransomware-guide"
+  },
+  {
+    "id": "mitre-attack",
+    "title": "MITRE ATT&CK Enterprise",
+    "shortTitle": "MITRE ATT&CK",
+    "issuer": "MITRE",
+    "edition": "Living knowledge base",
+    "region": "Global",
+    "primaryTopic": "Incident Response & Threat Intel",
+    "topics": ["Incident Response & Threat Intel", "Application Security", "Network, Wi-Fi & PAN", "Identity & Access"],
+    "type": "Threat knowledge base",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "A map of how real adversaries actually operate.",
+    "summary": "ATT&CK is a curated knowledge base of adversary tactics, techniques and procedures based on observed threat activity. It gives defenders a common language for detection engineering, threat hunting, purple teaming and control validation.",
+    "keyPoints": [
+      "Tactics describe adversary goals; techniques describe how they achieve them.",
+      "Threat groups, software and campaigns connect behavior to real-world actors.",
+      "Detection mappings show which techniques are covered and which are blind spots.",
+      "Purple-team exercises can prioritize techniques relevant to the client's sector.",
+      "ATT&CK is not a control framework; it informs threat-informed defense.",
+      "Coverage should be validated with telemetry, not assumed from tool features.",
+      "ATT&CK for ICS, Mobile and Cloud extend the model to other environments."
+    ],
+    "crownJewels": [
+      "Crown-jewel systems and the identities that access them.",
+      "Detection coverage and telemetry sources.",
+      "Threat intelligence relevant to the sector and region.",
+      "Incident timelines mapped to adversary behavior.",
+      "Security-control gaps that enable high-impact techniques."
+    ],
+    "clientUse": [
+      "Prioritize detection engineering around techniques that threaten crown jewels.",
+      "Map existing alerts to ATT&CK and identify blind spots.",
+      "Design purple-team exercises from realistic techniques.",
+      "Use ATT&CK to brief leadership on adversary behavior and investment gaps."
+    ],
+    "tags": ["MITRE", "ATT&CK", "Threat informed", "Detection", "Purple team"],
+    "link": "https://attack.mitre.org/"
+  }
+]

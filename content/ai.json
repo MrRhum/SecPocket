@@ -1,0 +1,269 @@
+[
+  {
+    "id": "nist-ai-rmf",
+    "title": "NIST AI Risk Management Framework 1.0",
+    "shortTitle": "NIST AI RMF",
+    "issuer": "NIST",
+    "edition": "AI RMF 1.0 · 2023",
+    "region": "United States / Global",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Governance & Risk", "Data & Privacy"],
+    "type": "Framework",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "A shared risk language for AI that boards and builders can both use.",
+    "summary": "The NIST AI Risk Management Framework provides a voluntary, use-case-neutral approach to managing risks from AI systems. Its four functions - Govern, Map, Measure and Manage - support trustworthy AI across the lifecycle.",
+    "keyPoints": [
+      "Govern creates accountability, policies, roles and a risk culture around AI.",
+      "Map establishes context, affected stakeholders and the specific risks of each AI use case.",
+      "Measure analyses, benchmarks and monitors risk and trustworthiness characteristics.",
+      "Manage prioritizes, treats and monitors risks, including residual risk and incidents.",
+      "Trustworthiness covers validity, safety, security, accountability, transparency, privacy and fairness.",
+      "Profiles adapt the framework to sectors, technologies or specific use cases.",
+      "It is voluntary but widely used as the reference structure for AI governance."
+    ],
+    "crownJewels": [
+      "AI models, weights, prompts and system instructions.",
+      "Training, fine-tuning and retrieval data, including personal information.",
+      "Agent tools, connectors and credentials that can act on the real world.",
+      "Affected people and the decisions or services the AI influences."
+    ],
+    "clientUse": [
+      "Inventory AI use cases and classify them by risk before buying controls.",
+      "Use Govern to assign an accountable owner and a clear risk appetite.",
+      "Build a measurement plan that includes security, privacy and fairness testing.",
+      "Turn the framework into an AI governance operating model, not a one-off assessment."
+    ],
+    "tags": ["AI", "Risk", "Governance", "Trustworthy AI", "Profiles"],
+    "link": "https://www.nist.gov/itl/ai-risk-management-framework"
+  },
+  {
+    "id": "nist-ai-600-1",
+    "title": "NIST Generative AI Profile (AI 600-1)",
+    "shortTitle": "NIST GenAI Profile",
+    "issuer": "NIST",
+    "edition": "NIST AI 600-1 · 2024",
+    "region": "United States / Global",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Governance & Risk", "Data & Privacy"],
+    "type": "Profile",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The AI RMF, sharpened for generative models and their unique failure modes.",
+    "summary": "NIST AI 600-1 is a cross-sector profile that applies the AI RMF to generative AI. It identifies risks that are amplified or novel in GenAI and suggests actions for developers, deployers and users across the lifecycle.",
+    "keyPoints": [
+      "Covers risks such as confabulation, data privacy, harmful bias, information integrity and security.",
+      "Highlights prompt injection, data leakage and supply-chain risk in model ecosystems.",
+      "Provides suggested actions mapped to the AI RMF functions and lifecycle stages.",
+      "Emphasizes testing, evaluation, red teaming and human oversight before deployment.",
+      "Addresses provenance, transparency and content authentication for generated media.",
+      "Useful as a checklist when a client is deploying an LLM or copilot."
+    ],
+    "crownJewels": [
+      "System prompts, retrieval corpora and conversation data.",
+      "Model weights, adapters and fine-tuning datasets.",
+      "Tool access, plugins and agent credentials.",
+      "Generated content that influences decisions or public trust."
+    ],
+    "clientUse": [
+      "Run a GenAI-specific risk assessment before piloting a copilot or agent.",
+      "Add prompt-injection and data-leakage tests to the security test plan.",
+      "Define human-review triggers for high-impact outputs.",
+      "Document model provenance and content-authenticity measures."
+    ],
+    "tags": ["Generative AI", "LLM", "AI RMF", "Prompt injection", "Evaluation"],
+    "link": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+  },
+  {
+    "id": "iso-42001",
+    "title": "ISO/IEC 42001:2023 AI Management System",
+    "shortTitle": "ISO 42001",
+    "issuer": "ISO / IEC",
+    "edition": "2023",
+    "region": "Global",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Governance & Risk", "Data & Privacy", "Resilience & Regulation"],
+    "type": "Standard",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The certifiable management system for responsible AI.",
+    "summary": "ISO/IEC 42001 specifies requirements for an artificial intelligence management system (AIMS). It gives organizations a certifiable, risk-based structure for AI governance, lifecycle controls and continual improvement.",
+    "keyPoints": [
+      "Uses the same Annex SL management-system structure as ISO 27001 and ISO 22301.",
+      "Requires an AI policy, roles, risk assessment and a statement of applicability.",
+      "Annex A controls address AI impact assessment, data, model lifecycle, third parties and transparency.",
+      "Emphasizes human oversight and accountability for AI-enabled decisions.",
+      "Integrates with information security, privacy and quality management systems.",
+      "Certification is possible through accredited bodies, though the standard is still new."
+    ],
+    "crownJewels": [
+      "AI system inventory and the business processes they affect.",
+      "Training and operational data, including personal information.",
+      "Model artifacts, prompts and evaluation evidence.",
+      "Human-oversight records and impact assessments.",
+      "Third-party models, APIs and data suppliers."
+    ],
+    "clientUse": [
+      "Use it to build an AI management system that can be audited.",
+      "Combine it with ISO 27001 to avoid parallel governance structures.",
+      "Require AI impact assessments for high-consequence use cases.",
+      "Map supplier obligations and evidence into the AIMS."
+    ],
+    "tags": ["AI", "AIMS", "Certification", "Governance", "Lifecycle"],
+    "link": "https://www.iso.org/standard/81230.html"
+  },
+  {
+    "id": "owasp-llm",
+    "title": "OWASP Top 10 for LLM Applications 2025",
+    "shortTitle": "OWASP LLM Top 10",
+    "issuer": "OWASP",
+    "edition": "2025",
+    "region": "Global",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Application Security", "Data & Privacy", "Supply Chain & Product Security"],
+    "type": "Risk list",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The ten ways LLM applications get exploited in production.",
+    "summary": "The OWASP LLM Top 10 catalogues the most critical security risks for applications built on large language models. It is a practical checklist for threat modelling, testing and securing copilots, RAG systems and AI agents.",
+    "keyPoints": [
+      "Prompt injection can override instructions or hijack tool use, including indirect injection through documents.",
+      "Sensitive information disclosure exposes prompts, training data, secrets or other users' data.",
+      "Supply-chain risks enter through models, datasets, plugins and dependencies.",
+      "Data and model poisoning can corrupt behavior and outputs.",
+      "Improper output handling turns model text into XSS, command execution or unsafe downstream actions.",
+      "Excessive agency gives the model tools and permissions beyond what the task requires.",
+      "System prompt leakage, vector-store weaknesses, misinformation and unbounded consumption round out the list."
+    ],
+    "crownJewels": [
+      "System prompts and hidden instructions.",
+      "Retrieval corpora, embeddings and vector databases.",
+      "Tool credentials, APIs and agent memory.",
+      "Model weights, fine-tuning data and user conversations."
+    ],
+    "clientUse": [
+      "Threat-model every LLM feature with the Top 10 as a prompt sheet.",
+      "Test indirect prompt injection through email, documents and web content.",
+      "Apply least privilege to tools and require confirmation for high-impact actions.",
+      "Add output encoding and validation before model text reaches other systems."
+    ],
+    "tags": ["LLM", "OWASP", "Prompt injection", "Agents", "RAG"],
+    "link": "https://genai.owasp.org/llm-top-10/"
+  },
+  {
+    "id": "mitre-atlas",
+    "title": "MITRE ATLAS",
+    "shortTitle": "MITRE ATLAS",
+    "issuer": "MITRE",
+    "edition": "Living knowledge base",
+    "region": "Global",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Incident Response & Threat Intel", "Application Security"],
+    "type": "Threat knowledge base",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "ATT&CK for AI: the tactics and techniques used against machine learning.",
+    "summary": "MITRE ATLAS is a knowledge base of adversary tactics, techniques and case studies targeting AI and machine learning systems. It helps security teams map threats, design detections and test defenses across the ML lifecycle.",
+    "keyPoints": [
+      "Organizes adversarial behavior across reconnaissance, access, staging, exfiltration and impact.",
+      "Includes techniques specific to ML, such as data poisoning, model evasion and prompt injection.",
+      "Case studies connect techniques to real-world incidents and research.",
+      "Mappings to ATT&CK help integrate AI threats into existing detection programmes.",
+      "Supports threat modelling, red teaming and control validation.",
+      "The knowledge base evolves with new AI attack research."
+    ],
+    "crownJewels": [
+      "Training and fine-tuning datasets.",
+      "Model weights, architecture and intellectual property.",
+      "Inference APIs, prompts and user data.",
+      "ML pipelines, feature stores and deployment infrastructure.",
+      "Agent tools and downstream systems the model can influence."
+    ],
+    "clientUse": [
+      "Use ATLAS to threat-model an AI system end to end.",
+      "Map AI techniques to existing ATT&CK detections where they overlap.",
+      "Design red-team exercises around realistic AI attack paths.",
+      "Prioritize controls by the techniques most relevant to the use case."
+    ],
+    "tags": ["AI", "Threat intelligence", "ATT&CK", "Adversarial ML", "Red team"],
+    "link": "https://atlas.mitre.org/"
+  },
+  {
+    "id": "anssi-genai",
+    "title": "ANSSI Security Recommendations for Generative AI",
+    "shortTitle": "ANSSI GenAI",
+    "issuer": "ANSSI (France)",
+    "edition": "ANSSI-PA-102 · 2024",
+    "region": "France / EU",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Data & Privacy", "Application Security", "Governance & Risk"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "France's architecture-first playbook for deploying generative AI safely.",
+    "summary": "ANSSI's generative AI guide sets out security recommendations for designing, deploying and operating a GenAI system. It focuses on architecture, data protection, access control, output validation and human oversight.",
+    "keyPoints": [
+      "Define the use case, threat model and trust boundaries before choosing a model.",
+      "Isolate the AI system from sensitive information systems and apply least privilege to connectors.",
+      "Protect prompts, models and data with encryption, access control and logging.",
+      "Validate and control outputs before they trigger actions or reach users.",
+      "Keep humans accountable for high-impact decisions and provide a way to contest outputs.",
+      "Monitor usage, detect anomalies and prepare an incident response plan for AI-specific failures.",
+      "ANSSI and BSI have also published joint zero-trust design principles for LLM systems."
+    ],
+    "crownJewels": [
+      "Sensitive data and prompts sent to the model.",
+      "Model weights, adapters and system instructions.",
+      "Connectors, plugins and credentials the model can use.",
+      "Outputs that feed business decisions or other systems.",
+      "Usage logs and personal data processed by the service."
+    ],
+    "clientUse": [
+      "Use it to review a GenAI architecture before production.",
+      "Draw trust boundaries between the model, data sources and business systems.",
+      "Add output validation and human approval for consequential actions.",
+      "Align AI security with French and EU regulatory expectations."
+    ],
+    "tags": ["France", "Generative AI", "Architecture", "ANSSI", "Human oversight"],
+    "link": "https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-ia-generative"
+  },
+  {
+    "id": "eu-ai-act",
+    "title": "EU Artificial Intelligence Act",
+    "shortTitle": "EU AI Act",
+    "issuer": "European Union",
+    "edition": "Regulation 2024/1689",
+    "region": "European Union",
+    "primaryTopic": "AI & Emerging Tech",
+    "topics": ["AI & Emerging Tech", "Resilience & Regulation", "Governance & Risk", "Data & Privacy"],
+    "type": "Regulation",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The risk-based law that is reshaping AI product design worldwide.",
+    "summary": "The EU AI Act establishes a risk-based legal framework for AI systems placed on the EU market. It prohibits certain practices, imposes transparency duties, and places extensive obligations on high-risk AI and general-purpose AI models.",
+    "keyPoints": [
+      "Unacceptable-risk practices are prohibited, including certain social scoring and manipulation uses.",
+      "High-risk systems must meet requirements for risk management, data governance, documentation, logging, transparency, human oversight and cybersecurity.",
+      "Limited-risk systems have transparency obligations, such as disclosing AI interaction or synthetic content.",
+      "General-purpose AI models face documentation, copyright and systemic-risk obligations.",
+      "Providers must operate a quality management system, conduct conformity assessment and apply CE marking.",
+      "Post-market monitoring, incident reporting and technical documentation are ongoing duties.",
+      "Implementation is phased, so scope and timing must be checked for each use case."
+    ],
+    "crownJewels": [
+      "High-risk AI systems and the decisions they influence.",
+      "Training, validation and testing datasets.",
+      "Technical documentation, logs and conformity evidence.",
+      "Human-oversight design and incident records.",
+      "General-purpose model capabilities and systemic-risk evaluations."
+    ],
+    "clientUse": [
+      "Classify each AI use case against the Act's risk tiers.",
+      "Build a technical file and quality-management system for high-risk systems.",
+      "Check supply-chain roles: provider, deployer, importer and distributor.",
+      "Connect AI Act evidence to ISO 42001 and NIST AI RMF work."
+    ],
+    "tags": ["EU", "AI", "Regulation", "High-risk", "GPAI"],
+    "link": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+  }
+]

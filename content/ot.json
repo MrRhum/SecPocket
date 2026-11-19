@@ -1,0 +1,117 @@
+[
+  {
+    "id": "iec-62443",
+    "title": "ISA/IEC 62443 Series",
+    "shortTitle": "IEC 62443",
+    "issuer": "ISA / IEC",
+    "edition": "Multi-part series · current",
+    "region": "Global",
+    "primaryTopic": "OT / ICS",
+    "topics": ["OT / ICS", "Network, Wi-Fi & PAN", "Supply Chain & Product Security", "Governance & Risk"],
+    "type": "Standard series",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The engineering standard for zones, conduits and OT security levels.",
+    "summary": "IEC 62443 is the leading international series for industrial automation and control system security. It defines security requirements for asset owners, system integrators, product suppliers and service providers, with zones, conduits and security levels.",
+    "keyPoints": [
+      "The series covers general requirements, policies, system security, component security and assessment.",
+      "Zones and conduits structure segmentation between assets with different security needs.",
+      "Security levels SL1 to SL4 describe resistance to increasingly capable attackers.",
+      "Foundational requirements cover identity, use control, integrity, confidentiality, availability and monitoring.",
+      "Asset owners define target security levels and verify them; suppliers build to component requirements.",
+      "The standard addresses safety, availability and the IT/OT convergence boundary.",
+      "Certification schemes exist for products and processes, with different maturity levels."
+    ],
+    "crownJewels": [
+      "Safety instrumented systems and life-safety functions.",
+      "PLCs, RTUs, HMIs, engineering workstations and historians.",
+      "The OT network segmentation and remote-access paths.",
+      "Production availability and process integrity.",
+      "Supplier components and firmware in the control system."
+    ],
+    "clientUse": [
+      "Define zones and conduits from the process, not just the network diagram.",
+      "Set target security levels per zone and prioritize the safety case.",
+      "Assess remote access, engineering workstations and removable media.",
+      "Align supplier requirements and product certifications with the target SL."
+    ],
+    "tags": ["OT", "ICS", "Zones", "Conduits", "Security levels"],
+    "link": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+  },
+  {
+    "id": "nist-800-82",
+    "title": "NIST SP 800-82 Rev. 3: OT Security",
+    "shortTitle": "NIST 800-82r3",
+    "issuer": "NIST",
+    "edition": "Rev. 3 · 2023",
+    "region": "United States / Global",
+    "primaryTopic": "OT / ICS",
+    "topics": ["OT / ICS", "Network, Wi-Fi & PAN", "Governance & Risk", "Cloud"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "How to secure operational technology without breaking the process.",
+    "summary": "SP 800-82 provides guidance for securing operational technology across industrial control, building automation and physical process environments. It addresses architecture, risk management, overlays, remote access and the unique safety and availability constraints of OT.",
+    "keyPoints": [
+      "OT priorities differ from IT: safety, availability and integrity often outrank confidentiality.",
+      "Use the 800-53 control overlays tailored for OT rather than copying enterprise IT controls.",
+      "Network segmentation, conduit design and DMZs are foundational.",
+      "Remote access, wireless, cloud connectivity and vendor support are high-risk paths.",
+      "Asset inventory and configuration management are hard in OT but essential.",
+      "Incident response must account for physical consequences and manual operations.",
+      "The guide covers IIoT, building control and other cyber-physical systems."
+    ],
+    "crownJewels": [
+      "Safety systems and process-control availability.",
+      "PLC, RTU, HMI and engineering-workstation configurations.",
+      "OT network segmentation and remote-access gateways.",
+      "Vendor and maintenance access paths.",
+      "Historian and production data used for decisions."
+    ],
+    "clientUse": [
+      "Use the overlays to tailor an OT control set.",
+      "Prioritize segmentation, remote access and asset visibility.",
+      "Build incident playbooks that include safe manual operations.",
+      "Assess IIoT, wireless and cloud connections as extensions of OT."
+    ],
+    "tags": ["OT", "ICS", "NIST", "Overlays", "Remote access"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+  },
+  {
+    "id": "mitre-attack-ics",
+    "title": "MITRE ATT&CK for ICS",
+    "shortTitle": "ATT&CK for ICS",
+    "issuer": "MITRE",
+    "edition": "Living knowledge base",
+    "region": "Global",
+    "primaryTopic": "OT / ICS",
+    "topics": ["OT / ICS", "Incident Response & Threat Intel", "Network, Wi-Fi & PAN"],
+    "type": "Threat knowledge base",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The adversary playbook for industrial control systems.",
+    "summary": "ATT&CK for ICS maps adversary tactics and techniques against industrial control systems. It helps OT security teams understand realistic attack paths, prioritize detections and test controls against known threat behavior.",
+    "keyPoints": [
+      "Covers tactics from initial access and discovery through lateral movement and impact.",
+      "Techniques include manipulation of control logic, safety-system abuse and process disruption.",
+      "Threat groups and software entries connect techniques to real campaigns.",
+      "Mappings support detection engineering, purple teaming and control validation.",
+      "OT incidents can have physical, environmental and safety consequences.",
+      "Use it alongside IEC 62443 and NIST 800-82 for a complete OT programme."
+    ],
+    "crownJewels": [
+      "Safety instrumented systems and process control.",
+      "Engineering workstations and control-system software.",
+      "OT network telemetry, remote access and vendor connections.",
+      "Production availability and physical safety."
+    ],
+    "clientUse": [
+      "Threat-model the plant using ICS techniques relevant to the process.",
+      "Map detections to adversary behavior, not just network signatures.",
+      "Design tabletop exercises around physical consequences.",
+      "Prioritize controls that interrupt high-impact techniques."
+    ],
+    "tags": ["OT", "ATT&CK", "Threat intelligence", "ICS", "Detections"],
+    "link": "https://attack.mitre.org/matrices/ics/"
+  }
+]

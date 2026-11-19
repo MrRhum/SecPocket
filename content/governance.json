@@ -1,0 +1,606 @@
+[
+  {
+    "id": "nist-csf-2",
+    "title": "NIST Cybersecurity Framework (CSF) 2.0",
+    "shortTitle": "NIST CSF 2.0",
+    "issuer": "NIST",
+    "edition": "2.0 · 2024",
+    "region": "United States / Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Resilience & Regulation", "Cloud", "OT / ICS"],
+    "type": "Framework",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "The common language for cyber risk, from boardroom to SOC.",
+    "summary": "NIST's voluntary framework organizes cybersecurity outcomes into six functions: Govern, Identify, Protect, Detect, Respond and Recover. Profiles and tiers turn risk appetite into a prioritized, sector-neutral programme that boards and engineers can both use.",
+    "keyPoints": [
+      "Six functions replace the original five, with Govern now explicit and central.",
+      "Organizational profiles compare current and target outcomes; community profiles tailor the model to a sector or mission.",
+      "Implementation tiers describe the rigor of risk governance, not a certification or a maturity score.",
+      "Informative references map outcomes to NIST SP 800-53, ISO/IEC 27001, CIS Controls and other standards.",
+      "Small-business quick starts and self-assessment tools make adoption practical beyond large enterprises.",
+      "Use is voluntary in the US, but regulators, insurers and boards increasingly treat it as a shared lens."
+    ],
+    "crownJewels": [
+      "Critical products, services and the dependencies that keep them running.",
+      "Asset, identity and data inventories that make risk visible and measurable.",
+      "Risk appetite, tolerances and named executive accountability.",
+      "Detection, response and recovery capability for high-impact scenarios.",
+      "Supply-chain and third-party risk visibility."
+    ],
+    "clientUse": [
+      "Open an engagement by mapping what the client already does to the six functions.",
+      "Compare current and target profiles to build a board-ready roadmap and budget case.",
+      "Use the tiers to describe governance rigor without implying certification.",
+      "Adopt the framework as the spine for a multi-standard compliance programme."
+    ],
+    "tags": ["Risk", "Board", "Profiles", "Tiers", "Strategy"],
+    "link": "https://www.nist.gov/cyberframework"
+  },
+  {
+    "id": "nist-800-53",
+    "title": "NIST SP 800-53 Rev. 5",
+    "shortTitle": "NIST 800-53",
+    "issuer": "NIST",
+    "edition": "Rev. 5 · 2020",
+    "region": "United States / Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "OT / ICS", "Identity & Access", "Supply Chain & Product Security"],
+    "type": "Control catalogue",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The control catalogue behind FedRAMP, CMMC and much of US federal security.",
+    "summary": "SP 800-53 is NIST's deep catalogue of security and privacy controls for federal systems and the organizations that serve them. Baselines and overlays let teams tailor a defensible control set without starting from a blank page.",
+    "keyPoints": [
+      "Twenty control families span access, audit, configuration, incident response, supply chain and privacy.",
+      "SP 800-53B provides low, moderate, high and privacy baselines for different impact levels.",
+      "Overlays adapt the catalogue to cloud, OT, mobile, PCI and other specialized environments.",
+      "SP 800-53A defines assessment procedures; OSCAL provides machine-readable control content.",
+      "Controls are selected through the RMF, then implemented, assessed, authorized and monitored.",
+      "Control enhancements allow teams to dial assurance up for high-value systems."
+    ],
+    "crownJewels": [
+      "High-impact systems and the data they process, especially PII and CUI.",
+      "Privileged and service accounts with elevated access.",
+      "Audit logs and other evidence needed to prove control operation.",
+      "Cryptographic keys, trust stores and certificate authorities.",
+      "Supplier and third-party connections that cross the authorization boundary."
+    ],
+    "clientUse": [
+      "Build a control matrix that maps existing evidence to the selected baseline.",
+      "Tailor controls and document inherited controls from cloud or shared-service providers.",
+      "Use 800-53A procedures to design an assessment plan instead of a document dump.",
+      "Prepare authorization packages and continuous-monitoring cadence for federal work."
+    ],
+    "tags": ["Controls", "Federal", "Baselines", "RMF", "FedRAMP"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/53/r5/final"
+  },
+  {
+    "id": "nist-rmf",
+    "title": "NIST Risk Management Framework (RMF)",
+    "shortTitle": "NIST RMF",
+    "issuer": "NIST",
+    "edition": "SP 800-37 Rev. 2 · 2018",
+    "region": "United States / Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "OT / ICS"],
+    "type": "Method",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "A seven-step discipline for authorizing systems without losing sight of risk.",
+    "summary": "The RMF is NIST's life-cycle method for managing security and privacy risk across an enterprise. It connects system categorization, control selection, assessment, authorization and continuous monitoring into one governance loop.",
+    "keyPoints": [
+      "Seven steps: Prepare, Categorize, Select, Implement, Assess, Authorize and Monitor.",
+      "The Prepare step establishes roles, risk tolerance and the organization-wide view before system work starts.",
+      "An authorization package records the boundary, controls, assessment results and risk decision.",
+      "Authorizing officials accept risk; they do not simply approve paperwork.",
+      "Continuous monitoring keeps controls effective as systems, threats and missions change.",
+      "The RMF integrates with the SDLC, CSF 2.0 and enterprise risk management."
+    ],
+    "crownJewels": [
+      "The authorization boundary and the system inventory inside it.",
+      "Security categorization and the rationale behind impact levels.",
+      "Authorization decisions, conditions and accepted risks.",
+      "Plans of action and milestones with owners and dates.",
+      "Monitoring evidence that proves controls still work."
+    ],
+    "clientUse": [
+      "Structure an ATO or authorization programme around the seven steps.",
+      "Define system boundaries early to prevent sprawling assessment scope.",
+      "Use the package to brief authorizing officials on residual risk, not just compliance.",
+      "Build a continuous-monitoring calendar with meaningful metrics."
+    ],
+    "tags": ["ATO", "Authorisation", "Risk", "Federal", "Lifecycle"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/37/r2/final"
+  },
+  {
+    "id": "nist-800-171",
+    "title": "NIST SP 800-171 Rev. 3",
+    "shortTitle": "NIST 800-171",
+    "issuer": "NIST",
+    "edition": "Rev. 3 · 2024",
+    "region": "United States",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Supply Chain & Product Security", "Data & Privacy"],
+    "type": "Standard",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The baseline for protecting controlled unclassified information in contractor systems.",
+    "summary": "SP 800-171 defines the security requirements for protecting controlled unclassified information (CUI) in non-federal systems. Revision 3 modernizes the text, aligns it with SP 800-53 and strengthens the link to CMMC assessments.",
+    "keyPoints": [
+      "Requirements are organized into seventeen families covering access, audit, configuration, incident response and supply chain.",
+      "The standard applies to contractor systems that process, store or transmit CUI.",
+      "Tailoring allows requirements to be marked not applicable or satisfied by another control with justification.",
+      "SP 800-171A provides assessment procedures; SPRS records the contractor's self-assessment score.",
+      "Prime contractors flow the requirements down to subcontractors that touch CUI.",
+      "CMMC Level 2 uses the 800-171 requirements as its practice set."
+    ],
+    "crownJewels": [
+      "CUI in documents, drawings, test data, maintenance records and communications.",
+      "Covered contractor information systems and their authorization boundaries.",
+      "Privileged accounts and remote-access paths into CUI environments.",
+      "Incident evidence and reporting channels to the DoD.",
+      "Subcontractor and supplier connections that extend the CUI footprint."
+    ],
+    "clientUse": [
+      "Run a scoped gap assessment against Rev. 3 and document tailoring decisions.",
+      "Build the system security plan and POA&M that CMMC assessors will expect.",
+      "Calculate and validate the SPRS score before affirmation.",
+      "Map CUI flows to identify unnecessary data and reduce assessment scope."
+    ],
+    "tags": ["CUI", "Defense", "CMMC", "SPRS", "Contractors"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/171/r3/final"
+  },
+  {
+    "id": "cmmc-2",
+    "title": "CMMC 2.0",
+    "shortTitle": "CMMC 2.0",
+    "issuer": "US Department of Defense",
+    "edition": "32 CFR Part 170 · 2024",
+    "region": "United States",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Supply Chain & Product Security", "Cloud"],
+    "type": "Certification",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The US defense supply chain's cyber certification and its assessment gates.",
+    "summary": "The Cybersecurity Maturity Model Certification requires defense contractors to demonstrate implementation of specified security practices. CMMC 2.0 introduced three levels, streamlined assessments and a phased rollout tied to DoD contracts.",
+    "keyPoints": [
+      "Level 1 (Foundational) covers 17 basic safeguarding practices and requires annual self-assessment.",
+      "Level 2 (Advanced) aligns with NIST SP 800-171 and requires third-party assessment for most contractors.",
+      "Level 3 (Expert) builds on SP 800-172 for the most critical programmes and uses government-led assessment.",
+      "Contractors must scope CUI and FCI, document practices and maintain evidence between assessments.",
+      "Affirmations and subcontractor flow-down extend accountability across the supply chain.",
+      "The final rule made CMMC a contract requirement, with implementation phased by acquisition."
+    ],
+    "crownJewels": [
+      "Federal contract information and controlled unclassified information.",
+      "The CUI enclave and the systems that can reach it.",
+      "Assessment evidence, system security plans and POA&Ms.",
+      "Subcontractor relationships that handle CUI or FCI.",
+      "Identity, logging and incident response capabilities in scope."
+    ],
+    "clientUse": [
+      "Determine the required CMMC level from the contract and data flow.",
+      "Scope the assessment boundary tightly before investing in remediation.",
+      "Prepare a C3PAO-ready evidence pack and close POA&M items.",
+      "Align CMMC, 800-171 and FedRAMP workstreams where they overlap."
+    ],
+    "tags": ["DoD", "CUI", "C3PAO", "Certification", "Defense"],
+    "link": "https://www.acq.osd.mil/cmmc/"
+  },
+  {
+    "id": "iso-27001",
+    "title": "ISO/IEC 27001:2022",
+    "shortTitle": "ISO 27001",
+    "issuer": "ISO / IEC",
+    "edition": "2022",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "Data & Privacy", "Supply Chain & Product Security"],
+    "type": "Standard",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "The certifiable management system that turns security into a business process.",
+    "summary": "ISO/IEC 27001 specifies requirements for an information security management system (ISMS). It is risk-based, auditable and certifiable, and it anchors security governance in leadership, evidence and continual improvement.",
+    "keyPoints": [
+      "Clauses 4 to 10 cover context, leadership, planning, support, operation, performance evaluation and improvement.",
+      "Risk assessment and treatment must be repeatable and linked to a Statement of Applicability.",
+      "Annex A contains 93 controls grouped into organizational, people, physical and technological themes.",
+      "Certification requires an accredited audit, management review and evidence of operation over time.",
+      "The 2022 revision added threat intelligence, cloud, data leakage and secure coding controls.",
+      "The 2013 edition transition ended in 2025, making 2022 the current baseline."
+    ],
+    "crownJewels": [
+      "The ISMS scope, risk register and Statement of Applicability.",
+      "Leadership decisions, resources and management-review evidence.",
+      "Operational records that prove controls work in practice.",
+      "Supplier, cloud and access-control evidence across the scope.",
+      "Internal audit findings, corrective actions and improvement history."
+    ],
+    "clientUse": [
+      "Stand up a pragmatic ISMS rather than a documentation factory.",
+      "Use a gap analysis against Annex A to focus remediation and certification effort.",
+      "Build the Statement of Applicability with clear inclusion and exclusion rationales.",
+      "Run internal audits that sample evidence and challenge control ownership."
+    ],
+    "tags": ["ISMS", "Certification", "Annex A", "Risk", "Audit"],
+    "link": "https://www.iso.org/standard/27001.html"
+  },
+  {
+    "id": "iso-27002",
+    "title": "ISO/IEC 27002:2022",
+    "shortTitle": "ISO 27002",
+    "issuer": "ISO / IEC",
+    "edition": "2022",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "Identity & Access"],
+    "type": "Guidance",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "The implementation playbook behind ISO 27001's Annex A.",
+    "summary": "ISO/IEC 27002 explains how to interpret and implement the 93 controls referenced by ISO 27001. It is guidance, not a certifiable management system, and helps teams move from control names to practical design choices.",
+    "keyPoints": [
+      "Controls are grouped into organizational, people, physical and technological themes.",
+      "Each control has a purpose statement and implementation guidance, with related-control notes.",
+      "Attributes help filter controls by type, information property, cybersecurity concept and capability.",
+      "The 2022 edition consolidated and renamed many 2013 controls, so mappings matter during transition.",
+      "Guidance supports tailoring: not every control is relevant to every risk scenario.",
+      "It can be used with ISO 27001 or as a standalone control reference."
+    ],
+    "crownJewels": [
+      "Control design decisions and the risks they address.",
+      "Named control owners and operating evidence.",
+      "Exceptions, compensating controls and residual risk.",
+      "Supplier and cloud control expectations.",
+      "Awareness, access and monitoring practices that support the controls."
+    ],
+    "clientUse": [
+      "Turn Annex A controls into implementable standards with owners and evidence.",
+      "Use attributes to build a control library that maps cleanly to NIST and CIS.",
+      "Pressure-test whether controls are designed for the client's real threat model.",
+      "Support ISO 27001 audits with operating evidence, not just policy text."
+    ],
+    "tags": ["Controls", "Guidance", "Annex A", "Implementation", "Maturity"],
+    "link": "https://www.iso.org/standard/75652.html"
+  },
+  {
+    "id": "iso-27005",
+    "title": "ISO/IEC 27005:2022",
+    "shortTitle": "ISO 27005",
+    "issuer": "ISO / IEC",
+    "edition": "2022",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Data & Privacy"],
+    "type": "Guidance",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "A repeatable method for turning threat and vulnerability data into risk decisions.",
+    "summary": "ISO/IEC 27005 provides guidance on managing information security risk in a way that supports ISO/IEC 27001. It covers context, assessment, treatment, acceptance, communication and monitoring, with both qualitative and quantitative options.",
+    "keyPoints": [
+      "Establish risk context, criteria, scope and the relationship to enterprise risk management.",
+      "Identify assets, threats, vulnerabilities, existing controls and consequences.",
+      "Analyse likelihood and impact, then evaluate results against risk criteria.",
+      "Choose from modify, retain, avoid or share, with documented residual risk.",
+      "Communicate and consult with stakeholders, then monitor and review continuously.",
+      "The method is technology-neutral and can support cloud, OT and third-party scenarios."
+    ],
+    "crownJewels": [
+      "Asset and process inventories with ownership and business value.",
+      "Threat intelligence and vulnerability data relevant to the scope.",
+      "Business-impact analysis and consequence modelling.",
+      "The risk register, treatment plans and accepted residual risks.",
+      "Evidence of monitoring and risk re-assessment."
+    ],
+    "clientUse": [
+      "Build a repeatable risk process instead of a one-off spreadsheet.",
+      "Use scenario-based assessments to make risk comparisons meaningful.",
+      "Tie treatment plans to owners, budgets and deadlines.",
+      "Present residual risk and acceptance decisions to executive risk owners."
+    ],
+    "tags": ["Risk", "Assessment", "Treatment", "Register", "ERM"],
+    "link": "https://www.iso.org/standard/80585.html"
+  },
+  {
+    "id": "cis-controls",
+    "title": "CIS Critical Security Controls v8.1",
+    "shortTitle": "CIS Controls v8.1",
+    "issuer": "Center for Internet Security",
+    "edition": "v8.1 · 2024",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Network, Wi-Fi & PAN", "Cloud", "Identity & Access", "Endpoint & Mobility"],
+    "type": "Control set",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "18 prioritized safeguards that stop the majority of commodity attacks.",
+    "summary": "The CIS Critical Security Controls are a prioritized set of 18 cyber defense actions, with safeguards tailored to three implementation groups. They are highly prescriptive, mapping-friendly and useful for building a practical baseline quickly.",
+    "keyPoints": [
+      "Eighteen controls cover inventory, data, identity, configuration, vulnerabilities, logging and recovery.",
+      "Implementation Group 1 is essential hygiene for small or low-risk organizations.",
+      "IG2 adds maturity for enterprises; IG3 addresses sensitive or high-threat environments.",
+      "Safeguards are specific and measurable, with mappings to NIST, ISO and PCI.",
+      "Version 8.1 updated guidance and kept the IG structure for prioritization.",
+      "The controls are a strong starting point when a client has no mature framework."
+    ],
+    "crownJewels": [
+      "Hardware and software inventories, including unauthorized assets.",
+      "Sensitive data, data flows and data-at-rest protections.",
+      "Privileged accounts and administrative pathways.",
+      "Vulnerability, patch and configuration state of exposed systems.",
+      "Backups and logging needed to recover and investigate."
+    ],
+    "clientUse": [
+      "Use IG1 as a minimum baseline for resource-constrained clients.",
+      "Build a prioritized 90-day roadmap from the 18 controls.",
+      "Map CIS safeguards to ISO 27001 or NIST outcomes to avoid duplicate work.",
+      "Measure safeguard coverage and show risk reduction to leadership."
+    ],
+    "tags": ["Baseline", "IG1", "Hardening", "Prioritisation", "SMB"],
+    "link": "https://www.cisecurity.org/controls"
+  },
+  {
+    "id": "fair",
+    "title": "FAIR (Factor Analysis of Information Risk)",
+    "shortTitle": "FAIR",
+    "issuer": "Open Group / FAIR Institute",
+    "edition": "O-RA Standard · 2021",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Payments & PAN", "Resilience & Regulation"],
+    "type": "Method",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Quantify cyber risk in money, not heat-map colours.",
+    "summary": "FAIR is a quantitative risk-analysis model that expresses cyber risk as probable frequency and probable magnitude of loss. It gives security leaders a defensible way to compare scenarios, set tolerances and justify controls in financial terms.",
+    "keyPoints": [
+      "Risk is decomposed into loss event frequency and loss magnitude.",
+      "Loss event frequency depends on threat event frequency and vulnerability.",
+      "Loss magnitude includes productivity, response, replacement, fines and reputation effects.",
+      "Control strength reduces frequency or magnitude; it can be modelled explicitly.",
+      "Monte Carlo simulation expresses uncertainty as a range, not a single number.",
+      "FAIR complements frameworks such as CSF and ISO 27001 by adding economics."
+    ],
+    "crownJewels": [
+      "Revenue-generating assets and services with measurable downtime costs.",
+      "Sensitive data whose loss creates regulatory and reputational exposure.",
+      "Key third-party dependencies and concentration risk.",
+      "Decision quality: assumptions, ranges and confidence levels."
+    ],
+    "clientUse": [
+      "Quantify the top three risk scenarios for a board or insurer.",
+      "Compare the risk reduction of competing controls against their cost.",
+      "Set risk tolerance in financial terms and monitor against it.",
+      "Document assumptions so the model can be challenged and updated."
+    ],
+    "tags": ["Quantitative", "Risk", "Board", "Insurance", "ROI"],
+    "link": "https://www.opengroup.org/security/fair/"
+  },
+  {
+    "id": "soc2",
+    "title": "AICPA SOC 2 / Trust Services Criteria",
+    "shortTitle": "SOC 2",
+    "issuer": "AICPA",
+    "edition": "TSC · 2017 (2022 points of focus)",
+    "region": "Global",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "Data & Privacy", "Supply Chain & Product Security"],
+    "type": "Assurance",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "The assurance report clients ask for when trust is the product.",
+    "summary": "SOC 2 reports provide independent assurance over controls at a service organization, based on the AICPA Trust Services Criteria. Security is always in scope; availability, processing integrity, confidentiality and privacy are optional.",
+    "keyPoints": [
+      "The five trust services criteria are security, availability, processing integrity, confidentiality and privacy.",
+      "Type 1 reports on control design at a point in time; Type 2 tests operating effectiveness over a period.",
+      "Scope, system description and control boundaries are as important as the controls themselves.",
+      "Evidence must cover the full period, including incidents, changes and exceptions.",
+      "Subservice organizations can use carve-out or inclusive methods.",
+      "SOC 2 is not a certification and does not replace ISO 27001, though they overlap heavily."
+    ],
+    "crownJewels": [
+      "Customer data, credentials and service availability.",
+      "Logical access, change management and monitoring controls.",
+      "Vendor and subservice organization oversight.",
+      "Incident records, exceptions and management responses.",
+      "The system description and evidence trail behind the report."
+    ],
+    "clientUse": [
+      "Run a readiness assessment before committing to an audit period.",
+      "Build an evidence calendar so controls are proven every month, not at year-end.",
+      "Use SOC 2 for SaaS trust and pair it with ISO 27001 where global clients ask.",
+      "Review vendor SOC 2 reports for scope, period, exceptions and CUECs."
+    ],
+    "tags": ["Assurance", "SaaS", "Trust", "Audit", "Type 2"],
+    "link": "https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2"
+  },
+  {
+    "id": "ncsc-caf",
+    "title": "NCSC Cyber Assessment Framework (CAF) 4.0",
+    "shortTitle": "NCSC CAF 4.0",
+    "issuer": "UK National Cyber Security Centre",
+    "edition": "4.0 · 2025",
+    "region": "United Kingdom",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Resilience & Regulation", "OT / ICS", "Cloud"],
+    "type": "Assessment framework",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The UK's outcome-based test for operators of essential services.",
+    "summary": "The CAF is the NCSC's outcome-focused assessment framework for organizations that provide essential services. Version 4.0 organizes 41 contributing outcomes under 14 principles and four objectives, and is used by UK regulators to assess cyber resilience.",
+    "keyPoints": [
+      "The four objectives are managing security risk, protecting against attack, detecting events and minimizing impact.",
+      "Fourteen principles and 41 contributing outcomes describe what good resilience looks like.",
+      "The framework is outcome-based, deliberately avoiding a tick-box control checklist.",
+      "Sector regulators use CAF profiles and self-assessments to target assurance activity.",
+      "Version 4.0 updated the framework in 2025 and introduced a core profile.",
+      "It complements NIS regulations in the UK and is relevant beyond regulated sectors."
+    ],
+    "crownJewels": [
+      "Essential functions and the assets, people and suppliers they depend on.",
+      "Regulated service continuity and incident response capability.",
+      "OT, cloud and third-party dependencies that could disrupt outcomes.",
+      "Board accountability, assurance evidence and improvement plans."
+    ],
+    "clientUse": [
+      "Run a CAF self-assessment against the 41 outcomes and rate evidence quality.",
+      "Use the core profile to prioritize essential-function resilience.",
+      "Translate gaps into regulator-ready improvement plans with owners.",
+      "Align CAF evidence with ISO 27001 and NIST CSF where possible."
+    ],
+    "tags": ["UK", "Essential services", "Resilience", "Regulation", "Outcomes"],
+    "link": "https://www.ncsc.gov.uk/collection/cyber-assessment-framework"
+  },
+  {
+    "id": "anssi-hygiene",
+    "title": "ANSSI Guide d'hygiène informatique",
+    "shortTitle": "ANSSI Hygiene",
+    "issuer": "ANSSI (France)",
+    "edition": "2017 · 42 measures",
+    "region": "France",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Network, Wi-Fi & PAN", "Identity & Access", "Endpoint & Mobility"],
+    "type": "Guideline",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "France's 42 pragmatic measures for a healthier information system.",
+    "summary": "ANSSI's hygiene guide distils essential cyber hygiene into 42 concrete measures for organizations of all sizes. It covers governance, awareness, authentication, patching, backups, network segmentation and crisis preparation with a distinctly operational tone.",
+    "keyPoints": [
+      "Forty-two measures are grouped into practical themes from inventory to incident response.",
+      "Strong authentication, least privilege and separate admin accounts are treated as basics.",
+      "Patching, backups and restore testing are framed as resilience controls, not IT chores.",
+      "Network segmentation, filtering and secure Wi-Fi are expected even in small environments.",
+      "Awareness and a named crisis team are part of the baseline.",
+      "The guide is available in French and English and underpins many ANSSI publications."
+    ],
+    "crownJewels": [
+      "Critical business systems and the data they hold.",
+      "Administrator accounts and privileged access paths.",
+      "Backups, restore capability and offline copies.",
+      "Network segmentation and internet-facing services.",
+      "Incident contacts, crisis procedures and evidence."
+    ],
+    "clientUse": [
+      "Use the 42 measures as a pragmatic SME baseline or audit checklist.",
+      "Anchor recommendations in a recognizable French regulatory language.",
+      "Prioritize identity, patching and backups before buying more tooling.",
+      "Build a one-page remediation plan with owners and due dates."
+    ],
+    "tags": ["France", "Hygiene", "SME", "42 measures", "Baseline"],
+    "link": "https://cyber.gouv.fr/publications/guide-dhygiene-informatique"
+  },
+  {
+    "id": "bsi-grundschutz",
+    "title": "BSI IT-Grundschutz",
+    "shortTitle": "BSI IT-Grundschutz",
+    "issuer": "BSI (Germany)",
+    "edition": "Compendium · 2023",
+    "region": "Germany",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Cloud", "OT / ICS", "Network, Wi-Fi & PAN"],
+    "type": "Methodology",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Germany's modular method for building a defensible baseline from the ground up.",
+    "summary": "IT-Grundschutz is BSI's methodology for establishing a measurable security baseline across business processes and IT systems. Its modules and protection-needs analysis support both a standalone baseline and ISO 27001 certification on a Grundschutz basis.",
+    "keyPoints": [
+      "A protection-needs assessment determines how much security each process and asset requires.",
+      "The IT-Grundschutz Compendium provides modules with must, should and can requirements.",
+      "Organizations can follow the basis, standard or core approach depending on ambition and risk.",
+      "ISO 27001 certification can be pursued on the basis of IT-Grundschutz.",
+      "Modules cover applications, infrastructure, ICS/OT, cloud and mobile use.",
+      "The method is detailed, prescriptive and well suited to German regulated markets."
+    ],
+    "crownJewels": [
+      "Business processes and the information assets that support them.",
+      "Protection-needs classifications and derived requirements.",
+      "OT, ICS and cloud modules with operational dependencies.",
+      "Supplier and outsourcing relationships that affect the baseline.",
+      "Audit evidence and implementation status per module."
+    ],
+    "clientUse": [
+      "Use protection-needs analysis to size controls proportionately.",
+      "Select modules that match the client's real technology estate.",
+      "Map Grundschutz modules to ISO 27001 Annex A for certification efficiency.",
+      "Give German stakeholders a familiar, auditable methodology."
+    ],
+    "tags": ["Germany", "BSI", "Modules", "Protection needs", "Certification"],
+    "link": "https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html"
+  },
+  {
+    "id": "essential-eight",
+    "title": "ACSC Essential Eight",
+    "shortTitle": "Essential Eight",
+    "issuer": "Australian Cyber Security Centre",
+    "edition": "Maturity model · updated 2023",
+    "region": "Australia",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "Endpoint & Mobility", "Identity & Access", "Network, Wi-Fi & PAN"],
+    "type": "Mitigation baseline",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "Australia's eight mitigations that blunt ransomware and commodity intrusions.",
+    "summary": "The Essential Eight is a prioritized set of eight mitigation strategies designed to make commodity attacks significantly harder. Each strategy has maturity levels, allowing organizations to measure progress from ad hoc to resilient.",
+    "keyPoints": [
+      "Application control and application patching close common malware paths.",
+      "Macro and user-application hardening reduce phishing payloads.",
+      "Restricting administrative privileges limits the blast radius of compromise.",
+      "Operating-system patching and multi-factor authentication protect the endpoint and identity layer.",
+      "Regular backups, tested restores and offline copies underpin recovery.",
+      "Maturity levels ML1 to ML3 describe increasing resistance to increasingly capable adversaries."
+    ],
+    "crownJewels": [
+      "Endpoints, servers and the applications that execute on them.",
+      "Privileged accounts and administrative pathways.",
+      "Identity providers, MFA tokens and recovery processes.",
+      "Backups and the ability to restore critical services."
+    ],
+    "clientUse": [
+      "Use the eight strategies as a ransomware-readiness baseline.",
+      "Assess maturity and build a sequenced improvement roadmap.",
+      "Prioritize application control, MFA and backups for the fastest risk reduction.",
+      "Report progress in a language familiar to Australian regulators and boards."
+    ],
+    "tags": ["Australia", "Ransomware", "Maturity", "Endpoint", "Baseline"],
+    "link": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight"
+  },
+  {
+    "id": "cisa-cpg",
+    "title": "CISA Cross-Sector Cybersecurity Performance Goals",
+    "shortTitle": "CISA CPGs",
+    "issuer": "CISA",
+    "edition": "CPG · 2022, updated",
+    "region": "United States",
+    "primaryTopic": "Governance & Risk",
+    "topics": ["Governance & Risk", "OT / ICS", "Identity & Access", "Resilience & Regulation"],
+    "type": "Baseline",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "A minimum viable baseline of outcomes for critical infrastructure.",
+    "summary": "CISA's Cross-Sector Cybersecurity Performance Goals define a common set of voluntary outcomes for critical infrastructure owners and operators. They prioritize foundational practices that reduce risk quickly and give under-resourced organizations a place to start.",
+    "keyPoints": [
+      "Goals cover account security, device security, data security and governance.",
+      "Additional goals address vulnerability management, supply chain, incident response and recovery.",
+      "Sector-specific goals extend the common baseline for particular critical-infrastructure environments.",
+      "The goals are voluntary and intended to complement frameworks such as NIST CSF.",
+      "They help prioritize investments and communicate minimum expectations to leadership.",
+      "Mappings to other standards reduce duplicate assessment work."
+    ],
+    "crownJewels": [
+      "Critical infrastructure services and operational technology.",
+      "Identity, device and data controls at the foundation of operations.",
+      "Backups, recovery capability and incident-response readiness.",
+      "Supply-chain visibility and third-party dependencies."
+    ],
+    "clientUse": [
+      "Establish a minimum baseline for clients with limited cybersecurity maturity.",
+      "Use the goals to support grant applications and budget conversations.",
+      "Map existing NIST CSF work to CPGs to reduce duplicate reporting.",
+      "Focus first on the foundational goals that cut across sectors."
+    ],
+    "tags": ["Critical infrastructure", "Baseline", "CISA", "Prioritisation", "Voluntary"],
+    "link": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals"
+  }
+]

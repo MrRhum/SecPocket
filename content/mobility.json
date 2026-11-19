@@ -1,0 +1,119 @@
+[
+  {
+    "id": "owasp-masvs",
+    "title": "OWASP Mobile Application Security Verification Standard (MASVS) 2.1",
+    "shortTitle": "OWASP MASVS",
+    "issuer": "OWASP",
+    "edition": "2.1 · 2024",
+    "region": "Global",
+    "primaryTopic": "Endpoint & Mobility",
+    "topics": ["Endpoint & Mobility", "Application Security", "Data & Privacy", "Identity & Access"],
+    "type": "Verification standard",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The security requirements baseline for iOS and Android apps.",
+    "summary": "MASVS defines security requirements for mobile applications across eight control categories. It is paired with the Mobile Application Security Testing Guide (MASTG) to support consistent architecture, development and testing.",
+    "keyPoints": [
+      "Control groups cover storage, cryptography, authentication, network communication, platform interaction, code quality, resilience and privacy.",
+      "Requirements apply to both iOS and Android, with platform-specific testing guidance.",
+      "MASVS is a verification standard, not a maturity model or a certification.",
+      "The MASTG provides tests and evidence expectations for each requirement.",
+      "It covers data protection, key management, secure communication and binary protections.",
+      "Privacy controls have become a first-class part of mobile assurance.",
+      "Use it in procurement, penetration testing and secure development."
+    ],
+    "crownJewels": [
+      "Credentials, tokens and secrets stored on the device.",
+      "Personal data, health data and business data in app storage.",
+      "Cryptographic keys and key-management flows.",
+      "Network connections and API trust.",
+      "Binary integrity, tampering protections and update mechanisms."
+    ],
+    "clientUse": [
+      "Use MASVS as acceptance criteria for mobile development and testing.",
+      "Scope mobile penetration tests against the relevant control groups.",
+      "Check how credentials and tokens are stored and refreshed.",
+      "Add reverse-engineering and tampering scenarios for high-value apps."
+    ],
+    "tags": ["Mobile", "MASVS", "Android", "iOS", "AppSec"],
+    "link": "https://mas.owasp.org/MASVS/"
+  },
+  {
+    "id": "owasp-mobile-top10",
+    "title": "OWASP Mobile Top 10:2024",
+    "shortTitle": "OWASP Mobile Top 10",
+    "issuer": "OWASP",
+    "edition": "2024",
+    "region": "Global",
+    "primaryTopic": "Endpoint & Mobility",
+    "topics": ["Endpoint & Mobility", "Application Security", "Data & Privacy", "Supply Chain & Product Security"],
+    "type": "Risk list",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The ten mistakes that leak mobile data and credentials.",
+    "summary": "The OWASP Mobile Top 10:2024 ranks the most important security risks in mobile applications. It shifts emphasis toward credential misuse, supply-chain risk, privacy and binary protections alongside storage and cryptography.",
+    "keyPoints": [
+      "M1 Improper Credential Usage exposes keys, tokens and hard-coded secrets.",
+      "M2 Inadequate Supply Chain Security covers SDKs, libraries and build dependencies.",
+      "M3 Insecure Authentication/Authorization and M4 Insufficient Input/Output Validation remain prevalent.",
+      "M5 Insecure Communication and M6 Inadequate Privacy Controls expose data in transit and at rest.",
+      "M7 Insufficient Binary Protections make reverse engineering and tampering easier.",
+      "M8 Security Misconfiguration, M9 Insecure Data Storage and M10 Insufficient Cryptography round out the list.",
+      "Mobile threats often combine an app weakness with a compromised device or network."
+    ],
+    "crownJewels": [
+      "Mobile credentials, tokens and API keys.",
+      "PII, health data and business data stored on the device.",
+      "Third-party SDKs and their data collection.",
+      "App binaries and the update pipeline.",
+      "Network traffic and backend API access."
+    ],
+    "clientUse": [
+      "Use the list to prioritize mobile testing and threat modelling.",
+      "Audit third-party SDKs and their permissions and data flows.",
+      "Test authentication, deep links and local storage for authorization flaws.",
+      "Add binary and tamper testing for high-value apps."
+    ],
+    "tags": ["Mobile", "OWASP", "Android", "iOS", "AppSec"],
+    "link": "https://owasp.org/www-project-mobile-top-10/"
+  },
+  {
+    "id": "nist-800-124",
+    "title": "NIST SP 800-124 Rev. 2: Mobile Device Security",
+    "shortTitle": "NIST Mobile Security",
+    "issuer": "NIST",
+    "edition": "Rev. 2 · 2023",
+    "region": "United States / Global",
+    "primaryTopic": "Endpoint & Mobility",
+    "topics": ["Endpoint & Mobility", "Identity & Access", "Governance & Risk", "Cloud"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Enterprise mobile security from BYOD policy to EMM controls.",
+    "summary": "SP 800-124 provides guidance on managing the security of mobile devices in the enterprise. It covers threat modelling, architecture, enterprise mobility management, BYOD and the controls needed to protect enterprise data on personal and corporate devices.",
+    "keyPoints": [
+      "Define the mobile threat model, including device loss, malicious apps and network attacks.",
+      "Choose a deployment model: corporate-owned, BYOD or a hybrid approach.",
+      "Use enterprise mobility management for configuration, app control and selective wipe.",
+      "Protect data at rest and in transit, with containerization where appropriate.",
+      "Manage app risk through vetting, allowlists and permission review.",
+      "Plan incident response for lost, compromised or decommissioned devices.",
+      "User privacy and legal considerations matter in BYOD programmes."
+    ],
+    "crownJewels": [
+      "Enterprise email, documents and app data on mobile devices.",
+      "Device credentials and access tokens.",
+      "MDM/EMM infrastructure and enrollment keys.",
+      "Lost, stolen or compromised devices.",
+      "Employee privacy and personal data on BYOD devices."
+    ],
+    "clientUse": [
+      "Define the deployment model and data-protection boundaries before selecting tools.",
+      "Review EMM configuration, conditional access and selective wipe.",
+      "Assess app vetting, sideloading and third-party app stores.",
+      "Build a lost-device and offboarding playbook."
+    ],
+    "tags": ["Mobile", "BYOD", "EMM", "MDM", "Endpoint"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/124/r2/final"
+  }
+]

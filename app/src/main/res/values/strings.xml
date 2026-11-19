@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SecPocket</string>
+    <string name="app_tagline">Cybersecurity frameworks, in your pocket.</string>
+    <string name="search_hint">Search frameworks, issuers, topics</string>
+    <string name="about">About SecPocket</string>
+    <string name="saved">Saved briefs</string>
+    <string name="search">Search</string>
+    <string name="back">Back</string>
+    <string name="share">Share brief</string>
+    <string name="bookmark_add">Save brief</string>
+    <string name="bookmark_remove">Remove saved brief</string>
+</resources>

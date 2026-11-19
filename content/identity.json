@@ -1,0 +1,117 @@
+[
+  {
+    "id": "nist-800-63b",
+    "title": "NIST Digital Identity Guidelines: Authentication (SP 800-63B-4)",
+    "shortTitle": "NIST 800-63B-4",
+    "issuer": "NIST",
+    "edition": "800-63B-4 · 2025",
+    "region": "United States / Global",
+    "primaryTopic": "Identity & Access",
+    "topics": ["Identity & Access", "Application Security", "Governance & Risk"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The reference standard for modern, usable authentication.",
+    "summary": "SP 800-63B-4 defines authentication and authenticator-management requirements at three assurance levels. It modernizes password guidance, recognizes syncable authenticators and pushes organizations toward phishing-resistant authentication.",
+    "keyPoints": [
+      "AAL1, AAL2 and AAL3 describe increasing confidence that a claimant controls an authenticator.",
+      "Passwords used alone must be at least 15 characters; passwords used with MFA must be at least 8.",
+      "No composition rules, no forced periodic rotation and no knowledge-based recovery questions.",
+      "Screen new passwords against blocklists and rate-limit authentication attempts.",
+      "Phishing-resistant authenticators are required at the highest assurance levels.",
+      "Syncable authenticators are recognized at AAL2, with requirements for recovery and device security.",
+      "Enrollment, reauthentication and authenticator lifecycle events must be managed explicitly."
+    ],
+    "crownJewels": [
+      "Credentials, authenticators and recovery channels.",
+      "Identity-proofing data and enrollment records.",
+      "Session tokens and authentication logs.",
+      "Account recovery paths, which are often weaker than the login itself."
+    ],
+    "clientUse": [
+      "Modernize password policy to length, blocklists and rate limiting.",
+      "Prioritize phishing-resistant MFA for administrators and high-value users.",
+      "Assess whether the authenticator mix meets the required AAL.",
+      "Design account recovery as a security-critical flow, not a helpdesk afterthought."
+    ],
+    "tags": ["Authentication", "MFA", "Passwords", "AAL", "Phishing resistance"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
+  },
+  {
+    "id": "fido2-webauthn",
+    "title": "FIDO2 / WebAuthn",
+    "shortTitle": "FIDO2 & WebAuthn",
+    "issuer": "FIDO Alliance / W3C",
+    "edition": "WebAuthn Level 2 · FIDO2",
+    "region": "Global",
+    "primaryTopic": "Identity & Access",
+    "topics": ["Identity & Access", "Application Security", "Endpoint & Mobility"],
+    "type": "Technical standard",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Phishing-resistant sign-in built on public-key cryptography and passkeys.",
+    "summary": "FIDO2 combines the W3C WebAuthn API with the CTAP2 protocol to enable public-key authentication in browsers and apps. It underpins passkeys and is the leading path to phishing-resistant, passwordless authentication.",
+    "keyPoints": [
+      "The authenticator holds a private key; the relying party stores only the public key.",
+      "Credentials are bound to the relying-party origin, which defeats classic phishing.",
+      "Passkeys can be device-bound or synced through a platform ecosystem.",
+      "Attestation can prove authenticator properties, but privacy and policy trade-offs matter.",
+      "Account recovery and device enrollment remain the weakest links in a passkey rollout.",
+      "FIDO2 works with platform biometrics, security keys and cross-device authentication."
+    ],
+    "crownJewels": [
+      "Authenticator private keys and secure hardware.",
+      "Biometric templates and local device authentication.",
+      "Account recovery and device-enrollment channels.",
+      "Relying-party configuration, origins and attestation policy.",
+      "Session tokens issued after authentication."
+    ],
+    "clientUse": [
+      "Make phishing-resistant MFA the default for administrators and high-risk users.",
+      "Design recovery before rollout; it is the most abused bypass.",
+      "Decide whether passkeys are syncable, device-bound or both by risk tier.",
+      "Test cross-device and platform-specific user journeys."
+    ],
+    "tags": ["FIDO2", "WebAuthn", "Passkeys", "MFA", "Phishing resistance"],
+    "link": "https://fidoalliance.org/fido2/"
+  },
+  {
+    "id": "oauth-bcp",
+    "title": "OAuth 2.0 Security Best Current Practice (RFC 9700)",
+    "shortTitle": "OAuth 2.0 BCP",
+    "issuer": "IETF",
+    "edition": "RFC 9700 · 2025",
+    "region": "Global",
+    "primaryTopic": "Identity & Access",
+    "topics": ["Identity & Access", "Application Security", "Cloud"],
+    "type": "Technical standard",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The guardrails that stop OAuth deployments from becoming token leaks.",
+    "summary": "RFC 9700 consolidates the security best practices for OAuth 2.0 deployments. It addresses redirects, PKCE, token handling, sender-constrained tokens and the removal of insecure grant patterns.",
+    "keyPoints": [
+      "Use authorization code flow with PKCE; avoid implicit and resource-owner password grants.",
+      "Redirect URIs must be exact and protected; open redirects are a classic token-theft path.",
+      "Sender-constrained tokens using DPoP or mutual TLS reduce bearer-token replay.",
+      "Access tokens should be audience-restricted and short-lived.",
+      "Refresh tokens need rotation, binding and revocation on compromise.",
+      "Client authentication, scope minimization and consent integrity are essential.",
+      "Token leakage can happen through logs, referrers, browsers and misconfigured apps."
+    ],
+    "crownJewels": [
+      "Access and refresh tokens.",
+      "Client secrets and private keys.",
+      "Authorization codes and redirect URI configuration.",
+      "Consent grants and scopes with access to sensitive APIs.",
+      "Token logs and monitoring data."
+    ],
+    "clientUse": [
+      "Review every OAuth client for PKCE, redirect URI and grant-type hygiene.",
+      "Prefer DPoP or mTLS for high-value APIs.",
+      "Set short token lifetimes and monitor anomalous token use.",
+      "Test consent screens for scope creep and redirect manipulation."
+    ],
+    "tags": ["OAuth", "Tokens", "PKCE", "API security", "Identity"],
+    "link": "https://www.rfc-editor.org/rfc/rfc9700.html"
+  }
+]

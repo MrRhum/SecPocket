@@ -1,0 +1,309 @@
+[
+  {
+    "id": "owasp-top10",
+    "title": "OWASP Top 10:2025",
+    "shortTitle": "OWASP Top 10",
+    "issuer": "OWASP",
+    "edition": "2025",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Governance & Risk", "Supply Chain & Product Security"],
+    "type": "Risk list",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "The baseline language for web application risk.",
+    "summary": "The OWASP Top 10 is the most widely used awareness document for web application security. The 2025 edition adds software supply chain failures and mishandling of exceptional conditions to the long-standing access-control and injection risks.",
+    "keyPoints": [
+      "A01 Broken Access Control remains the top risk in web applications.",
+      "A02 Security Misconfiguration covers cloud defaults, verbose errors and unnecessary features.",
+      "A03 Software Supply Chain Failures is new and elevates dependency and build-system risk.",
+      "A04 Cryptographic Failures and A05 Injection remain core engineering concerns.",
+      "A06 Insecure Design and A07 Authentication Failures address architecture and identity.",
+      "A08 Integrity Failures, A09 Logging and Alerting Failures and A10 Mishandling of Exceptional Conditions close the list.",
+      "The Top 10 is an awareness baseline, not a complete verification standard."
+    ],
+    "crownJewels": [
+      "Authentication and session state.",
+      "Access-control decisions and object-level authorization.",
+      "Source code, dependencies and build pipelines.",
+      "Secrets, keys and sensitive configuration.",
+      "Logs and alerting that reveal or miss attacks."
+    ],
+    "clientUse": [
+      "Use it to frame developer awareness and secure-coding training.",
+      "Map findings from penetration tests and scanners to the categories.",
+      "Pair it with ASVS when you need verifiable requirements.",
+      "Prioritize access control, supply chain and authentication for 2025 programmes."
+    ],
+    "tags": ["OWASP", "Web", "AppSec", "Awareness", "Secure coding"],
+    "link": "https://owasp.org/Top10/2025/"
+  },
+  {
+    "id": "owasp-asvs",
+    "title": "OWASP Application Security Verification Standard (ASVS) 5.0",
+    "shortTitle": "OWASP ASVS 5.0",
+    "issuer": "OWASP",
+    "edition": "5.0 · 2025",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Identity & Access", "Data & Privacy", "Supply Chain & Product Security"],
+    "type": "Verification standard",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "Testable application security requirements, not just good advice.",
+    "summary": "ASVS 5.0 defines verifiable security requirements for applications and their APIs. It lets teams specify assurance levels, scope assessments consistently and turn application security into evidence-based verification.",
+    "keyPoints": [
+      "Three verification levels support different assurance needs, from baseline to high-assurance applications.",
+      "Requirements span architecture, authentication, session management, access control and input validation.",
+      "Cryptography, data protection, communications, configuration and file handling are covered in depth.",
+      "API and web requirements are integrated rather than treated as separate worlds.",
+      "Each requirement can be tested and evidenced, making it suitable for procurement and audits.",
+      "Version 5.0 restructured the standard and clarified requirements for modern applications."
+    ],
+    "crownJewels": [
+      "Authentication, session and access-control logic.",
+      "Sensitive data, cryptographic keys and secrets.",
+      "API endpoints and business logic that enforce authorization.",
+      "Input handling, file upload and output encoding paths.",
+      "Security logging and error handling evidence."
+    ],
+    "clientUse": [
+      "Pick a verification level based on data sensitivity and exposure.",
+      "Use ASVS as acceptance criteria in development and procurement contracts.",
+      "Scope penetration tests and code reviews with explicit ASVS chapters.",
+      "Track requirement-level evidence instead of a single pass/fail report."
+    ],
+    "tags": ["OWASP", "ASVS", "Verification", "AppSec", "Requirements"],
+    "link": "https://owasp.org/www-project-application-security-verification-standard/"
+  },
+  {
+    "id": "owasp-api",
+    "title": "OWASP API Security Top 10:2023",
+    "shortTitle": "OWASP API Top 10",
+    "issuer": "OWASP",
+    "edition": "2023",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Cloud", "Identity & Access"],
+    "type": "Risk list",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The authorization failures that dominate API breaches.",
+    "summary": "The OWASP API Security Top 10 focuses on the risks that are specific to APIs, especially broken object-level authorization and business-flow abuse. It is essential for any organization exposing internal or partner APIs.",
+    "keyPoints": [
+      "API1 Broken Object Level Authorization lets users access objects belonging to others.",
+      "API2 Broken Authentication covers weak token and credential handling.",
+      "API3 Broken Object Property Level Authorization exposes or mass-assigns sensitive fields.",
+      "API4 Unrestricted Resource Consumption enables abuse through expensive or unbounded calls.",
+      "API5 Broken Function Level Authorization and API6 sensitive business flows enable privilege and fraud abuse.",
+      "API7 SSRF, API8 misconfiguration, API9 inventory gaps and API10 unsafe third-party consumption complete the list.",
+      "Traditional web scanners often miss these problems; test the business logic."
+    ],
+    "crownJewels": [
+      "Object identifiers and tenant boundaries.",
+      "Tokens, API keys and authentication flows.",
+      "Sensitive object properties and admin functions.",
+      "Business flows such as payments, referrals and password resets.",
+      "The API inventory, versions and deprecated endpoints."
+    ],
+    "clientUse": [
+      "Test every object and function for authorization, not just authentication.",
+      "Inventory all APIs, including shadow and deprecated versions.",
+      "Set rate limits, quotas and cost controls for expensive operations.",
+      "Review third-party API consumption and trust assumptions."
+    ],
+    "tags": ["API", "OWASP", "BOLA", "Authorization", "AppSec"],
+    "link": "https://owasp.org/API-Security/editions/2023/en/0x00-header/"
+  },
+  {
+    "id": "owasp-samm",
+    "title": "OWASP Software Assurance Maturity Model (SAMM) 2.0",
+    "shortTitle": "OWASP SAMM",
+    "issuer": "OWASP",
+    "edition": "2.0 · 2020",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Governance & Risk", "Supply Chain & Product Security"],
+    "type": "Maturity model",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Measure and improve how your organization builds secure software.",
+    "summary": "SAMM is a maturity model for software assurance across the development lifecycle. It organizes 15 security practices into five business functions, with incremental maturity levels and assessment guidance.",
+    "keyPoints": [
+      "Five business functions: Governance, Design, Implementation, Verification and Operations.",
+      "Fifteen practices cover strategy, policy, education, threat assessment, secure architecture and testing.",
+      "Maturity levels 0 to 3 describe increasingly institutionalized practices.",
+      "Assessment worksheets help gather evidence and score each practice.",
+      "The model is technology-agnostic and scales from small teams to enterprises.",
+      "It pairs well with SSDF and ASVS for a complete AppSec programme."
+    ],
+    "crownJewels": [
+      "Software development lifecycle and release process.",
+      "Source code, dependencies and build artifacts.",
+      "Security requirements, threat models and test evidence.",
+      "Developer training and security champions.",
+      "Production monitoring and vulnerability response."
+    ],
+    "clientUse": [
+      "Run a SAMM assessment to baseline AppSec maturity.",
+      "Build a multi-quarter roadmap focused on a few practices at a time.",
+      "Use maturity scores to show progress to engineering leadership.",
+      "Connect SAMM improvements to SSDF and ASVS requirements."
+    ],
+    "tags": ["AppSec", "Maturity", "SDLC", "OWASP", "Assessment"],
+    "link": "https://owaspsamm.org/"
+  },
+  {
+    "id": "nist-ssdf",
+    "title": "NIST Secure Software Development Framework (SSDF)",
+    "shortTitle": "NIST SSDF",
+    "issuer": "NIST",
+    "edition": "SP 800-218 · 2022",
+    "region": "United States / Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Supply Chain & Product Security", "AI & Emerging Tech", "Governance & Risk"],
+    "type": "Framework",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "A common baseline for secure software development and supplier assurance.",
+    "summary": "The SSDF defines a set of secure software development practices that organizations can integrate into their SDLC. It is used for internal programmes and for supplier attestations, including US federal software acquisition.",
+    "keyPoints": [
+      "Four practice groups: Prepare the Organization, Protect the Software, Produce Well-Secured Software and Respond to Vulnerabilities.",
+      "Prepare the Organization establishes policy, roles, tooling and training.",
+      "Protect the Software secures the development environment, code and build pipeline.",
+      "Produce Well-Secured Software covers secure design, coding, testing and release.",
+      "Respond to Vulnerabilities covers intake, analysis, remediation and disclosure.",
+      "SP 800-218A extends the framework to generative AI and dual-use foundation models.",
+      "The framework is outcome-based and maps to common SDLC practices."
+    ],
+    "crownJewels": [
+      "Source code, secrets and intellectual property.",
+      "Build systems, CI/CD pipelines and signing keys.",
+      "Third-party components and their provenance.",
+      "Vulnerability reports and disclosure channels.",
+      "Release artifacts and update mechanisms."
+    ],
+    "clientUse": [
+      "Build a secure SDLC roadmap around the four practice groups.",
+      "Use SSDF attestations as supplier evidence for federal and enterprise buyers.",
+      "Secure the build pipeline, not just the code review process.",
+      "Extend the practices to AI model development with SP 800-218A."
+    ],
+    "tags": ["SSDF", "SDLC", "Secure development", "Supply chain", "Attestation"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/218/final"
+  },
+  {
+    "id": "cwe-top25",
+    "title": "CWE Top 25 Most Dangerous Software Weaknesses",
+    "shortTitle": "CWE Top 25",
+    "issuer": "MITRE",
+    "edition": "2025 edition",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Governance & Risk"],
+    "type": "Weakness list",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "The coding mistakes most likely to become real vulnerabilities.",
+    "summary": "The CWE Top 25 is MITRE's ranked list of the most dangerous software weaknesses, based on real vulnerability data. It helps development teams prioritize secure-coding standards, code review and static-analysis rules.",
+    "keyPoints": [
+      "Ranks weaknesses by prevalence and severity in real-world vulnerability data.",
+      "Covers injection, memory safety, access control, authentication, path traversal and deserialization.",
+      "Maps to CWE identifiers that tools and secure-coding standards can reference.",
+      "Useful for tuning SAST rules and developer training.",
+      "The list changes annually, so policies should be reviewed.",
+      "It complements OWASP Top 10 and ASVS with a weakness-level view."
+    ],
+    "crownJewels": [
+      "Source code and input-handling logic.",
+      "Memory-unsafe components and native libraries.",
+      "Authentication and authorization checks.",
+      "Deserialization and file-processing paths.",
+      "Secure-coding standards and tool coverage."
+    ],
+    "clientUse": [
+      "Tune SAST and code-review checklists to the Top 25.",
+      "Build developer training around the weaknesses found in actual code.",
+      "Prioritize memory-safety work in native and embedded code.",
+      "Track whether top weaknesses recur across releases."
+    ],
+    "tags": ["CWE", "Weaknesses", "Secure coding", "SAST", "MITRE"],
+    "link": "https://cwe.mitre.org/top25/"
+  },
+  {
+    "id": "slsa",
+    "title": "SLSA (Supply-chain Levels for Software Artifacts)",
+    "shortTitle": "SLSA",
+    "issuer": "OpenSSF",
+    "edition": "Specification v1.x",
+    "region": "Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Supply Chain & Product Security", "Cloud"],
+    "type": "Framework",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Prove how your software was built, not just what it contains.",
+    "summary": "SLSA is a framework for improving software supply-chain integrity through build provenance, source integrity and hardened build platforms. Its levels give buyers and builders a shared way to describe assurance.",
+    "keyPoints": [
+      "Focuses on source integrity, build integrity and artifact provenance.",
+      "Build levels progress from documented builds to hardened, isolated, reproducible build platforms.",
+      "Provenance attestations record what was built, from which source and by which builder.",
+      "Signed provenance helps consumers verify an artifact before deployment.",
+      "SLSA complements SBOMs: SBOMs describe components, SLSA describes how the artifact was produced.",
+      "Adoption can be incremental along a build or source track."
+    ],
+    "crownJewels": [
+      "Source repositories and commit history.",
+      "Build systems, CI runners and release pipelines.",
+      "Signing keys and attestation trust roots.",
+      "Release artifacts and distribution channels.",
+      "Dependencies and third-party builders."
+    ],
+    "clientUse": [
+      "Assess the client's build pipeline against the SLSA levels.",
+      "Require provenance for critical software and verify it at deployment.",
+      "Harden CI identity, isolation and secret handling first.",
+      "Use SLSA alongside SBOM and SSDF for a complete supply-chain story."
+    ],
+    "tags": ["Supply chain", "Provenance", "Build security", "OpenSSF", "Attestation"],
+    "link": "https://slsa.dev/"
+  },
+  {
+    "id": "cisa-secure-by-design",
+    "title": "CISA Secure by Design",
+    "shortTitle": "Secure by Design",
+    "issuer": "CISA",
+    "edition": "Principles · 2023-2024",
+    "region": "United States / Global",
+    "primaryTopic": "Application Security",
+    "topics": ["Application Security", "Supply Chain & Product Security", "Governance & Risk"],
+    "type": "Principles",
+    "level": "Foundation",
+    "essential": false,
+    "hook": "Shift the burden of security from customers to product makers.",
+    "summary": "Secure by Design is CISA's call for technology manufacturers to build security into products by default. It defines three principles and a set of tactics for making secure outcomes the default, not an optional add-on.",
+    "keyPoints": [
+      "Take ownership of customer security outcomes rather than shifting the burden.",
+      "Embrace radical transparency and accountability, including vulnerability disclosure.",
+      "Lead from the top so product security is a business priority.",
+      "Secure-by-default tactics include MFA, no default passwords and safe configuration.",
+      "Memory-safe languages and secure update mechanisms reduce whole classes of defects.",
+      "The guidance is relevant to software, hardware, IoT and cloud services."
+    ],
+    "crownJewels": [
+      "Customer data and the products that process it.",
+      "Default credentials and initial configuration.",
+      "Update and vulnerability-disclosure channels.",
+      "Third-party components in the product.",
+      "Logging and incident transparency."
+    ],
+    "clientUse": [
+      "Use the principles in product design reviews and vendor selection.",
+      "Ask suppliers for secure-by-default evidence, not just a security questionnaire.",
+      "Prioritize removal of default passwords and forced MFA.",
+      "Include vulnerability disclosure and update policy in contracts."
+    ],
+    "tags": ["CISA", "Product security", "Secure defaults", "Transparency", "IoT"],
+    "link": "https://www.cisa.gov/securebydesign"
+  }
+]

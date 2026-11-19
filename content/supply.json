@@ -1,0 +1,119 @@
+[
+  {
+    "id": "nist-800-161",
+    "title": "NIST SP 800-161 Rev. 1: Cyber Supply Chain Risk Management",
+    "shortTitle": "NIST C-SCRM",
+    "issuer": "NIST",
+    "edition": "Rev. 1 · 2022",
+    "region": "United States / Global",
+    "primaryTopic": "Supply Chain & Product Security",
+    "topics": ["Supply Chain & Product Security", "Governance & Risk", "Cloud", "OT / ICS"],
+    "type": "Guideline",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Manage the suppliers and components you do not control.",
+    "summary": "SP 800-161r1 provides practices for identifying, assessing and mitigating cyber supply chain risk. It integrates C-SCRM into the RMF and addresses suppliers, products, services, provenance and the full acquisition lifecycle.",
+    "keyPoints": [
+      "C-SCRM is an enterprise-wide capability, not a procurement checkbox.",
+      "Identify critical products, services and suppliers, then map tiered dependencies.",
+      "Integrate supply-chain risk into system categorization, control selection and monitoring.",
+      "Use contractual requirements, supplier assessments and provenance evidence.",
+      "SBOMs and software provenance improve visibility into components and build processes.",
+      "Plan for supplier incidents, concentration risk and exit or substitution.",
+      "The guidance covers cloud, OT and third-party service providers."
+    ],
+    "crownJewels": [
+      "Critical software, hardware and services that support the mission.",
+      "Supplier and sub-supplier relationships, including concentration risk.",
+      "Source code, build environments and update channels.",
+      "Customer and mission data shared with suppliers.",
+      "Contractual rights, assurance evidence and exit plans."
+    ],
+    "clientUse": [
+      "Build a tiered supplier inventory based on criticality and access.",
+      "Add security and provenance requirements to contracts.",
+      "Request SBOMs, attestations and incident-notification commitments.",
+      "Test supplier-exit and substitution plans for critical services."
+    ],
+    "tags": ["Supply chain", "C-SCRM", "NIST", "Provenance", "Third parties"],
+    "link": "https://csrc.nist.gov/pubs/sp/800/161/r1/final"
+  },
+  {
+    "id": "eu-cra",
+    "title": "EU Cyber Resilience Act (CRA)",
+    "shortTitle": "EU Cyber Resilience Act",
+    "issuer": "European Union",
+    "edition": "Regulation 2024/2847",
+    "region": "European Union",
+    "primaryTopic": "Supply Chain & Product Security",
+    "topics": ["Supply Chain & Product Security", "Resilience & Regulation", "OT / ICS", "Application Security"],
+    "type": "Regulation",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "Security obligations are coming to every connected product sold in the EU.",
+    "summary": "The Cyber Resilience Act sets cybersecurity requirements for products with digital elements placed on the EU market. It covers secure design, vulnerability handling, security updates, technical documentation and conformity assessment across the product lifecycle.",
+    "keyPoints": [
+      "Manufacturers must design products with security by default and protect them across the support period.",
+      "Vulnerability handling, coordinated disclosure and timely security updates are mandatory.",
+      "Technical documentation, risk assessment and conformity assessment support CE marking.",
+      "Importers and distributors have due-diligence and traceability obligations.",
+      "Open-source stewards have a defined role, with carve-outs for non-commercial development.",
+      "Reporting obligations for exploited vulnerabilities and severe incidents begin ahead of the main obligations.",
+      "The main obligations apply from December 2027, with phased reporting duties earlier."
+    ],
+    "crownJewels": [
+      "Connected products, embedded software and firmware.",
+      "Update mechanisms and signing keys.",
+      "Known vulnerabilities and incident reports.",
+      "Supply-chain components and open-source dependencies.",
+      "Customer data and device identities."
+    ],
+    "clientUse": [
+      "Classify products and map the applicable CRA obligations.",
+      "Build vulnerability handling and security-update processes now.",
+      "Prepare technical documentation and a conformity-assessment plan.",
+      "Review supplier and open-source component governance."
+    ],
+    "tags": ["EU", "CRA", "Product security", "IoT", "Regulation"],
+    "link": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj"
+  },
+  {
+    "id": "sbom",
+    "title": "SBOM Minimum Elements (NTIA / CISA)",
+    "shortTitle": "SBOM",
+    "issuer": "NTIA / CISA",
+    "edition": "Minimum elements · 2021+",
+    "region": "United States / Global",
+    "primaryTopic": "Supply Chain & Product Security",
+    "topics": ["Supply Chain & Product Security", "Application Security", "Governance & Risk", "Cloud"],
+    "type": "Guidance",
+    "level": "Foundation",
+    "essential": true,
+    "hook": "Know what is in your software before someone else tells you.",
+    "summary": "The SBOM minimum elements define what a software bill of materials should contain to support supply-chain transparency. SBOMs give organizations a machine-readable inventory of components, dependencies and suppliers for vulnerability response and procurement.",
+    "keyPoints": [
+      "An SBOM lists components, their suppliers, versions and unique identifiers.",
+      "Dependency relationships, author information and timestamps are part of the minimum set.",
+      "SPDX and CycloneDX are common machine-readable formats.",
+      "SBOMs support vulnerability management, license review and incident response.",
+      "VEX can document whether a product is affected by a specific vulnerability.",
+      "An SBOM is a starting point: freshness, completeness and signing matter.",
+      "Regulated buyers increasingly require SBOMs in contracts."
+    ],
+    "crownJewels": [
+      "Software inventory and dependency graph.",
+      "Supplier and component provenance.",
+      "Known vulnerabilities and VEX status.",
+      "Build and release artifacts.",
+      "Third-party and open-source components."
+    ],
+    "clientUse": [
+      "Require SBOMs for critical software and verify their completeness.",
+      "Integrate SBOM ingestion into vulnerability management.",
+      "Use VEX to distinguish affected from unaffected products.",
+      "Sign and version SBOMs alongside releases."
+    ],
+    "tags": ["SBOM", "Supply chain", "SPDX", "CycloneDX", "Transparency"],
+    "link": "https://www.cisa.gov/sbom"
+  }
+]

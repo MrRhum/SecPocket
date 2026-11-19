@@ -1,0 +1,41 @@
+[
+  {
+    "id": "pqc",
+    "title": "NIST Post-Quantum Cryptography Standards",
+    "shortTitle": "Post-Quantum Crypto",
+    "issuer": "NIST",
+    "edition": "FIPS 203 / 204 / 205 · 2024",
+    "region": "United States / Global",
+    "primaryTopic": "Cryptography",
+    "topics": ["Cryptography", "Identity & Access", "Cloud", "Governance & Risk"],
+    "type": "Standards",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "Start the migration before quantum computers can harvest today's secrets.",
+    "summary": "NIST's first post-quantum cryptography standards define algorithms for key establishment and digital signatures. They give organizations a path to replace vulnerable public-key cryptography before large-scale quantum computers arrive.",
+    "keyPoints": [
+      "FIPS 203 specifies ML-KEM for key encapsulation, based on the CRYSTALS-Kyber design.",
+      "FIPS 204 specifies ML-DSA for digital signatures, based on Dilithium.",
+      "FIPS 205 specifies SLH-DSA, a hash-based signature scheme for different trust assumptions.",
+      "The migration affects TLS, VPNs, PKI, code signing, firmware and long-lived data protection.",
+      "Harvest-now-decrypt-later makes long-lived confidentiality data a near-term priority.",
+      "Crypto agility, inventory and hybrid deployments are practical first steps.",
+      "NIST transition guidance and additional signature standards continue to evolve."
+    ],
+    "crownJewels": [
+      "Long-lived confidential data and the keys protecting it.",
+      "Public-key infrastructure and certificate authorities.",
+      "Code-signing and firmware-signing keys.",
+      "VPNs, TLS endpoints and secure messaging.",
+      "Hardware security modules and key-management systems."
+    ],
+    "clientUse": [
+      "Build a cryptographic inventory and identify quantum-vulnerable algorithms.",
+      "Prioritize long-lived secrets and high-value signing keys.",
+      "Pilot hybrid key exchange in TLS and VPNs.",
+      "Plan crypto-agility, vendor support and re-issuance of certificates."
+    ],
+    "tags": ["Post-quantum", "Cryptography", "ML-KEM", "Migration", "FIPS"],
+    "link": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+  }
+]

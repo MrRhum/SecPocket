@@ -1,0 +1,235 @@
+[
+  {
+    "id": "pci-dss",
+    "title": "PCI DSS v4.0.1",
+    "shortTitle": "PCI DSS 4.0.1",
+    "issuer": "PCI Security Standards Council",
+    "edition": "4.0.1 · 2024",
+    "region": "Global",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Data & Privacy", "Cloud", "Governance & Risk"],
+    "type": "Standard",
+    "level": "Advanced",
+    "essential": true,
+    "hook": "The global standard for protecting cardholder data and the PAN.",
+    "summary": "PCI DSS sets the security requirements for organizations that store, process or transmit cardholder data. Version 4.0.1 modernizes the standard with targeted risk analyses, a customized approach and stronger authentication and monitoring requirements.",
+    "keyPoints": [
+      "Twelve requirements cover network security, configuration, data protection, access, monitoring and testing.",
+      "The cardholder data environment includes systems that store, process or transmit the PAN and those connected to them.",
+      "Never store sensitive authentication data after authorization; protect the PAN with encryption, truncation, masking or tokenization.",
+      "MFA is required for all access into the cardholder data environment, including remote and administrative access.",
+      "Future-dated requirements became mandatory on 31 March 2025, including stronger e-commerce and monitoring controls.",
+      "Scope reduction through segmentation, tokenization and P2PE is a core strategy.",
+      "Compliance is validated through SAQs or a QSA assessment depending on volume and model."
+    ],
+    "crownJewels": [
+      "Primary account numbers and any sensitive authentication data.",
+      "The cardholder data environment and its connected systems.",
+      "Encryption keys, key-management processes and HSMs.",
+      "Payment terminals, e-commerce scripts and payment applications.",
+      "Access, monitoring and audit logs across the CDE."
+    ],
+    "clientUse": [
+      "Define and minimise the CDE boundary before assessing controls.",
+      "Use tokenization, segmentation and P2PE to reduce scope.",
+      "Build evidence for MFA, logging and e-commerce script monitoring.",
+      "Separate compliance reporting from a genuine card-data security programme."
+    ],
+    "tags": ["PCI", "PAN", "Cardholder data", "CDE", "Payments"],
+    "link": "https://www.pcisecuritystandards.org/standards/pci-dss/"
+  },
+  {
+    "id": "pci-3ds",
+    "title": "PCI 3-D Secure (3DS)",
+    "shortTitle": "PCI 3DS",
+    "issuer": "PCI Security Standards Council",
+    "edition": "3DS v1.0.1",
+    "region": "Global",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Application Security", "Identity & Access", "Cloud"],
+    "type": "Standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "Security requirements for the authentication layer behind card-not-present payments.",
+    "summary": "The PCI 3DS standard defines security requirements for the 3-D Secure environment used to authenticate cardholders in e-commerce. It covers access control, cryptography, logging, vulnerability management and the interfaces between merchants, issuers and 3DS providers.",
+    "keyPoints": [
+      "The 3DS environment includes the 3DS server, directory server, access-control server and related components.",
+      "Authentication data, PANs and cryptographic material must be protected across every interface.",
+      "Risk-based authentication and one-time passwords require strong key management and anti-replay controls.",
+      "Access to 3DS systems should follow least privilege and strong authentication.",
+      "Logging, monitoring and vulnerability management are essential in the authentication path.",
+      "Third-party 3DS providers extend the compliance and assurance boundary.",
+      "3DS reduces fraud but adds phishing, social-engineering and availability risks."
+    ],
+    "crownJewels": [
+      "PANs and cardholder authentication data.",
+      "One-time passwords and risk-based authentication decisions.",
+      "Cryptographic keys and secure channels between 3DS components.",
+      "Access-control servers and issuer authentication services.",
+      "Transaction logs and fraud-decision records."
+    ],
+    "clientUse": [
+      "Map the 3DS environment and provider responsibilities.",
+      "Review authentication flows for phishing and replay resistance.",
+      "Test key management, logging and access controls across interfaces.",
+      "Include 3DS providers in third-party assurance and incident planning."
+    ],
+    "tags": ["3DS", "Payments", "E-commerce", "Authentication", "PCI"],
+    "link": "https://www.pcisecuritystandards.org/standards/3ds/"
+  },
+  {
+    "id": "pci-pin",
+    "title": "PCI PIN Security",
+    "shortTitle": "PCI PIN",
+    "issuer": "PCI Security Standards Council",
+    "edition": "PIN v3.1",
+    "region": "Global",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Identity & Access", "OT / ICS"],
+    "type": "Standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "Protecting PINs from terminal to issuer, across keys and HSMs.",
+    "summary": "PCI PIN Security defines requirements for the secure processing of PINs at ATMs and point-of-sale terminals. It covers PIN entry devices, key management, HSMs, key-injection facilities and the intermediaries that handle PIN blocks.",
+    "keyPoints": [
+      "PINs must be protected in transit and at rest using approved cryptography and key management.",
+      "PIN entry devices must resist tampering and be inspected and maintained.",
+      "Key generation, distribution, rotation and destruction need dual control and split knowledge.",
+      "HSMs and key-injection facilities are high-value assets requiring physical and logical protection.",
+      "PIN blocks must be translated and processed only in approved zones.",
+      "Third-party processors and key custodians extend the assurance boundary.",
+      "Weak key management and unmanaged terminals are recurring causes of PIN compromise."
+    ],
+    "crownJewels": [
+      "PINs, PIN blocks and encrypted PIN data.",
+      "Terminal and HSM cryptographic keys.",
+      "Key-injection facilities and key-loading processes.",
+      "POS and ATM terminals in the field.",
+      "Transaction and key-management logs."
+    ],
+    "clientUse": [
+      "Audit key management, dual control and split knowledge end to end.",
+      "Inventory terminals and verify tamper and inspection processes.",
+      "Assess HSM and key-injection facilities as high-value assets.",
+      "Include processors and key custodians in third-party reviews."
+    ],
+    "tags": ["PIN", "ATM", "POS", "HSM", "Key management"],
+    "link": "https://www.pcisecuritystandards.org/standards/pci-pin/"
+  },
+  {
+    "id": "pci-p2pe",
+    "title": "PCI Point-to-Point Encryption (P2PE)",
+    "shortTitle": "PCI P2PE",
+    "issuer": "PCI Security Standards Council",
+    "edition": "P2PE v3.1",
+    "region": "Global",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Cloud", "Data & Privacy"],
+    "type": "Standard",
+    "level": "Specialist",
+    "essential": false,
+    "hook": "Encrypt the PAN at the terminal and shrink the card-data environment.",
+    "summary": "PCI P2PE validates solutions that encrypt card data at the point of interaction and decrypt it only in a secure environment. A validated P2PE solution can significantly reduce merchant PCI scope and exposure.",
+    "keyPoints": [
+      "Card data is encrypted at the terminal and remains encrypted through the merchant environment.",
+      "Validated P2PE solutions use approved devices, key management and decryption environments.",
+      "The decryption environment and key-loading process are high-value assets.",
+      "Merchant scope reduction depends on correct deployment and device management.",
+      "P2PE does not remove all PCI obligations; people, processes and systems still matter.",
+      "Device tampering and insecure key injection can undermine the entire solution."
+    ],
+    "crownJewels": [
+      "PAN and sensitive authentication data at the point of interaction.",
+      "P2PE keys, key-loading and decryption infrastructure.",
+      "Payment terminals and their firmware.",
+      "The decryption environment and its access controls.",
+      "Device inventory, deployment and tamper evidence."
+    ],
+    "clientUse": [
+      "Check that the P2PE solution is validated for the exact devices and use case.",
+      "Assess key management and decryption-environment controls.",
+      "Verify device inventory, tamper inspection and firmware management.",
+      "Use P2PE as part of scope reduction, not as a compliance shortcut."
+    ],
+    "tags": ["P2PE", "Encryption", "Payments", "Scope reduction", "Terminals"],
+    "link": "https://www.pcisecuritystandards.org/standards/pci-p2pe/"
+  },
+  {
+    "id": "swift-csp",
+    "title": "SWIFT Customer Security Programme (CSP)",
+    "shortTitle": "SWIFT CSP",
+    "issuer": "SWIFT",
+    "edition": "CSCF · annual",
+    "region": "Global / Financial",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Governance & Risk", "Incident Response & Threat Intel", "Supply Chain & Product Security"],
+    "type": "Control framework",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "The security controls every SWIFT-connected institution must attest to.",
+    "summary": "SWIFT CSP requires financial institutions connected to the SWIFT network to implement the Customer Security Controls Framework and attest annually. It focuses on securing the local SWIFT environment, limiting access and detecting and responding to fraud.",
+    "keyPoints": [
+      "Three objectives: secure your environment, know and limit access, and detect and respond.",
+      "Controls cover the SWIFT infrastructure, operator PCs, credentials, patching and network segregation.",
+      "Annual self-attestation is mandatory; larger or higher-risk institutions face independent assessment.",
+      "The framework evolves yearly, so control versions and evidence must be tracked.",
+      "Payment fraud, insider misuse and compromised operator credentials are core threat scenarios.",
+      "Third-party service providers and local middleware extend the risk boundary.",
+      "Non-compliance can be disclosed to counterparties and supervisors."
+    ],
+    "crownJewels": [
+      "SWIFT infrastructure, middleware and operator workstations.",
+      "Operator credentials, tokens and privileged access.",
+      "Payment instructions and transaction data.",
+      "Logs, monitoring and incident evidence.",
+      "Third-party service providers with SWIFT access."
+    ],
+    "clientUse": [
+      "Map the local SWIFT architecture and the controls that apply.",
+      "Test segregation, access control and operator behavior.",
+      "Prepare annual attestation evidence and independent-assessment readiness.",
+      "Rehearse fraud detection and customer-notification procedures."
+    ],
+    "tags": ["SWIFT", "Banking", "Payments", "Attestation", "Fraud"],
+    "link": "https://www.swift.com/myswift/customer-security-programme-csp"
+  },
+  {
+    "id": "nydfs-500",
+    "title": "NYDFS Cybersecurity Regulation (23 NYCRR 500)",
+    "shortTitle": "NYDFS Part 500",
+    "issuer": "New York Department of Financial Services",
+    "edition": "Amended 2024",
+    "region": "United States / New York",
+    "primaryTopic": "Payments & PAN",
+    "topics": ["Payments & PAN", "Resilience & Regulation", "Governance & Risk", "Supply Chain & Product Security"],
+    "type": "Regulation",
+    "level": "Advanced",
+    "essential": false,
+    "hook": "One of the strictest state-level cyber regulations for financial firms.",
+    "summary": "23 NYCRR 500 requires covered financial services companies to maintain a cybersecurity programme, assess risk, protect nonpublic information and report significant incidents. The 2024 amendments strengthened governance, resilience and third-party requirements.",
+    "keyPoints": [
+      "Covered entities need a written cybersecurity policy, a CISO and board oversight.",
+      "Risk assessments and asset inventories drive control selection.",
+      "Access controls, MFA, encryption and vulnerability management are mandatory.",
+      "Third-party service providers must be assessed and contractually managed.",
+      "Significant cybersecurity incidents must be reported to NYDFS within 72 hours.",
+      "Annual certification of material compliance is required.",
+      "The 2024 amendments add requirements for business continuity, asset inventories and larger-entity governance."
+    ],
+    "crownJewels": [
+      "Nonpublic information and customer financial data.",
+      "Privileged accounts and remote-access paths.",
+      "Third-party providers with access to information systems.",
+      "Incident records, reporting evidence and board minutes.",
+      "Business-continuity and recovery capabilities."
+    ],
+    "clientUse": [
+      "Assess governance, CISO authority and board reporting.",
+      "Review MFA, encryption and third-party controls for nonpublic information.",
+      "Test the 72-hour incident-reporting workflow.",
+      "Prepare annual certification evidence in advance."
+    ],
+    "tags": ["NYDFS", "Financial services", "Regulation", "Incident reporting", "MFA"],
+    "link": "https://www.dfs.ny.gov/industry-guidance/cybersecurity"
+  }
+]
